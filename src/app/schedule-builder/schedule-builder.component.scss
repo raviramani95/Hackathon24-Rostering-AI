@@ -6,10 +6,30 @@ html, body {
   }
   
  #calendar {
-    max-width: 1200px;
-    margin: 40px auto;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .row {
+    margin-left: 48px;
   }
 
   body {
     background-color: #eff3f7;
+  }
+
+  .calender-col{
+    border: 20px solid #E0E0E7 !important;
+    border-radius: 5px;
+  }
+
+  .people-col{
+    border: 20px solid #E0E0E7 !important;
+    border-radius: 5px;
+  }
+
+  .container {
+    margin: 0;
+    margin-top: 70px !important;
+    max-width: 100% !important;
   }

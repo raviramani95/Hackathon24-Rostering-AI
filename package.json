@@ -32,7 +32,9 @@
     "@fullcalendar/resource": "^6.1.11",
     "@fullcalendar/resource-timeline": "^6.1.11",
     "@fullcalendar/timegrid": "^6.1.11",
+    "bootstrap": "^5.3.3",
     "font-awesome": "^4.7.0",
+    "ngx-bootstrap": "^9.0.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

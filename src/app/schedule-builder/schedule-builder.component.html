@@ -1,4 +1,21 @@
-<full-calendar #calendar id="calendar"
-  [options]="calendarOptions"
-  [events]="eventsPromise | async"
-></full-calendar>
+<div class="container">
+    <div class="row">
+        <div class="col-8 calender-col">
+            <div>
+                <h3>Calender</h3>
+            </div>
+            <full-calendar #calendar id="calendar"
+                [options]="calendarOptions"
+                [events]="eventsPromise | async"
+                ></full-calendar>
+        </div>
+        <div class="col-4 people-col">
+            <div>
+                <h3>People</h3>
+            </div>
+            <div>
+                
+            </div>
+        </div>
+    </div>
+</div>
