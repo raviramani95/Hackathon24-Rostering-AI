@@ -40,3 +40,9 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+/AutoRosteringAI/.vs/*
+/AutoRosteringAI/eSolver/bin/*
+/AutoRosteringAI/eSolver/obj/*
+/AutoRosteringAI/AutoRosteringAI/obj/*
+/AutoRosteringAI/AutoRosteringAI/bin/*

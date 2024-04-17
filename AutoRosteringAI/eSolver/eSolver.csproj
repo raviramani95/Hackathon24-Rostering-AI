@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net6.0</TargetFramework>
+		<Platforms>AnyCPU;x64</Platforms>
+		<AssemblyName>eSolver</AssemblyName>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="Test\GeneratedJsons\**" />
+		<Compile Remove="Test\Jsons\GeneratedJsons\**" />
+		<EmbeddedResource Remove="Test\GeneratedJsons\**" />
+		<EmbeddedResource Remove="Test\Jsons\GeneratedJsons\**" />
+		<None Remove="Test\GeneratedJsons\**" />
+		<None Remove="Test\Jsons\GeneratedJsons\**" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<PackageReference Include="Google.OrTools" Version="9.3.10497" />
+		<PackageReference Include="Microsoft.AspNetCore.SignalR.Core" Version="1.1.0" />
+		<PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+		<PackageReference Include="RestSharp" Version="107.2.1" />
+		<PackageReference Include="Selenium.WebDriver" Version="3.141.0" />
+		<PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="101.0.4951.4100" />
+		<PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
+		<PackageReference Include="System.Management" Version="4.7.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Reference Include="Microsoft.IdentityModel.Tokens">
+			<HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.identitymodel.tokens\5.3.0\lib\netstandard2.0\Microsoft.IdentityModel.Tokens.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Update="SolverSolutionObserver.cs" />
+	</ItemGroup>
+
+</Project>

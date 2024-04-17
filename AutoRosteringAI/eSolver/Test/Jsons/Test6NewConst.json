@@ -1,0 +1,329 @@
+﻿{
+   "JobsAndAvailableEmployees":null,
+   "MaxNumOfJobsAtSameTime":1,
+   "MaxTime":300.0,
+   "NumberOfEmployees":2,
+   "NumberOfJobs":4,
+   "StartDayOfTheWeek":"Monday",
+   "Maximize":true,
+   "StopAtFirstNonMaximizeSolution":false,
+   "StopAtLastNonMaximizeSolution":false,
+   "FinalConsoleOutput":false,
+   "PrintSolutions":false,
+   "IgnoreAleardyAssignedEmployees":false,
+   "SetRestictedNumberOfEmployees":false,
+   "Employees":[
+      {
+         "Id":1,
+         "JobTypeID":null,
+         "StartDate":"2020-02-12T00:00:00",
+         "LeaveDate":null,
+         "DateOfBirth":null,
+         "TimeBandBaseDate":null,
+         "RosterBaseDate":null,
+         "EmployeeNumber":"1",
+         "Firstname":"ana",
+         "Surname":"anic",
+         "Address2":"",
+         "Address1":"",
+         "Address3":"",
+         "CostCode":null,
+         "Address4":"",
+         "TelephoneNumber":"",
+         "MobileNumber":"",
+         "TargetRuleGroup":null,
+         "Email":"ana@gmail.com",
+         "Username":"ana123",
+         "EmployeeProfile":null,
+         "Gender":null,
+         "Location":null,
+         "Department":null,
+         "Division":null,
+         "JobTitle":null,
+         "Team":null,
+         "Class":null,
+         "TimeBandRule":null,
+         "Roster":null,
+         "Notification":"Email",
+         "Manager":null,
+         "JobType":null,
+         "PayRate":null,
+         "MaxHours1":null,
+         "MaxHours2":null,
+         "MaxHours3":null,
+         "MaxHours4":null,
+         "MaxHours5":null,
+         "AllowedTrades":false,
+         "Availability":false,
+         "NightWorker":false
+      },
+      {
+         "Id":2,
+         "JobTypeID":null,
+         "StartDate":"2020-02-13T00:00:00",
+         "LeaveDate":null,
+         "DateOfBirth":null,
+         "TimeBandBaseDate":null,
+         "RosterBaseDate":null,
+         "EmployeeNumber":"2",
+         "Firstname":"bojana",
+         "Surname":"bojanic",
+         "Address2":"",
+         "Address1":"",
+         "Address3":"",
+         "CostCode":null,
+         "Address4":"",
+         "TelephoneNumber":"",
+         "MobileNumber":"",
+         "TargetRuleGroup":null,
+         "Email":"bojana@gmail.com",
+         "Username":"bojana123",
+         "EmployeeProfile":null,
+         "Gender":null,
+         "Location":null,
+         "Department":null,
+         "Division":null,
+         "JobTitle":null,
+         "Team":null,
+         "Class":null,
+         "TimeBandRule":null,
+         "Roster":null,
+         "Notification":"Push&Email",
+         "Manager":null,
+         "JobType":null,
+         "PayRate":null,
+         "MaxHours1":null,
+         "MaxHours2":null,
+         "MaxHours3":null,
+         "MaxHours4":null,
+         "MaxHours5":null,
+         "AllowedTrades":false,
+         "Availability":false,
+         "NightWorker":false
+      }
+   ],
+   "EmployeeAssigments":[
+      
+   ],
+   "JobsForSolver":[
+      
+   ],
+   "ScheduleRankings":[
+      
+   ],
+   "RankingRules":[
+      
+   ],
+   "AllConstraintRules":[
+      {
+         "Id":1,
+         "Name":"Not Already Assigned"
+      },
+      {
+         "Id":2,
+         "Name":"Maximum Number Of Hours"
+      },
+      {
+         "Id":3,
+         "Name":"Employee Leaver Status"
+      },
+      {
+         "Id":4,
+         "Name":"Maximum Number Of Days Of The Week"
+      },
+      {
+         "Id":5,
+         "Name":"Employee Must Not Work With Another Employee"
+      },
+      {
+         "Id":6,
+         "Name":"Employee Must Work With Another Employee"
+      },
+      {
+         "Id":7,
+         "Name":"Maximum Number Of Job Types"
+      },
+      {
+         "Id":8,
+         "Name":"Maximum Number Of Job Types Consecutively"
+      },
+      {
+         "Id":9,
+         "Name":"Employee Field Value"
+      },
+      {
+         "Id":10,
+         "Name":"Split Shifts"
+      },
+      {
+         "Id":11,
+         "Name":"Days Off Within A Period"
+      }
+   ],
+   "RankingTypes":[
+      {
+         "Id":1,
+         "Name":"Scheduled Hours"
+      },
+      {
+         "Id":2,
+         "Name":"Default job"
+      },
+      {
+         "Id":3,
+         "Name":"Job Type Frequency"
+      },
+      {
+         "Id":4,
+         "Name":"Day of week frequency"
+      },
+      {
+         "Id":5,
+         "Name":"Employee field value"
+      }
+   ],
+   "Schedule":{
+      "ScheduleID":1,
+      "ScheduleStartDate":"2020-08-01T00:00:00",
+      "ScheduleEndDate":"2020-08-31T00:00:00",
+      "OnCallSlots":null,
+      "ScheduleActiveConstraints":[
+         {
+            "ConstraintRuleID":1,
+            "ScheduleID":1,
+            "ConstraintName":"Not Already Assigned",
+            "IsConstraintActive":true,
+            "Schedule":null,
+            "ConstraintRule":null,
+            "ConstraintEMWWAEs":null,
+            "ConstraintEMNWWAEs":null,
+            "ConstraintSetValues":null,
+            "ConstraintMNODOTW":null,
+            "ConstraintMNOH":null,
+            "ConstraintDOWP":null,
+            "ConstraintSS":null,
+            "Id":1
+         },
+         {
+            "ConstraintRuleID":11,
+            "ScheduleID":1,
+            "ConstraintName":"days off 1",
+            "IsConstraintActive":true,
+            "Schedule":null,
+            "ConstraintRule":null,
+            "ConstraintEMWWAEs":null,
+            "ConstraintEMNWWAEs":null,
+            "ConstraintSetValues":null,
+            "ConstraintMNODOTW":null,
+            "ConstraintMNOH":null,
+            "ConstraintDOWP":{
+               "StartDay":"",
+               "NumberOfRestDays":1,
+               "MustBeConsecutive":false,
+               "IsPayPeriod":false,
+               "IsMonth":false,
+               "IsWeek":false,
+               "ConstraintID":3,
+               "CustomDataID":null,
+               "ConstraintSetValueID":null,
+               "ConstraintCustomDataID":null,
+               "ConstraintCustomRangeID":null,
+               "ConstraintBaseDateRangeID":1,
+               "CustomData":null,
+               "ConstraintSetValue":null,
+               "ConstraintCustomData":null,
+               "ConstraintCustomRange":null,
+               "ConstraintBaseDateRange":{
+                  "ConstraintID":3,
+                  "BaseDate":"2020-08-24T00:00:00",
+                  "BaseDateRange":3,
+                  "Constraint":null,
+                  "Id":1
+               },
+               "Id":1
+            },
+            "ConstraintSS":null,
+            "Id":3
+         }
+      ],
+      "ScheduleJobs":[
+         {
+            "JobID":1,
+            "JobStartDate":"2020-08-24T08:00:00",
+            "JobStartTime":"00:00:00",
+            "JobEndDate":"2020-08-24T16:00:00",
+            "JobEndTime":"00:00:00",
+            "Hours":"08:00:00",
+            "NoOfEmployeesRequired":1,
+            "SubgroupID":1,
+            "JobtypeID":2,
+            "JobStatusID":4,
+            "JobCustomData":[
+               
+            ],
+            "Jobtype":null,
+            "UnavailableEmployeesForJob":[
+               
+            ]
+         },
+         {
+            "JobID":2,
+            "JobStartDate":"2020-08-26T08:00:00",
+            "JobStartTime":"00:00:00",
+            "JobEndDate":"2020-08-26T16:00:00",
+            "JobEndTime":"00:00:00",
+            "Hours":"08:00:00",
+            "NoOfEmployeesRequired":1,
+            "SubgroupID":1,
+            "JobtypeID":2,
+            "JobStatusID":4,
+            "JobCustomData":[
+               
+            ],
+            "Jobtype":null,
+            "UnavailableEmployeesForJob":[
+               
+            ]
+         },
+         {
+            "JobID":3,
+            "JobStartDate":"2020-08-28T08:00:00",
+            "JobStartTime":"00:00:00",
+            "JobEndDate":"2020-08-28T16:00:00",
+            "JobEndTime":"00:00:00",
+            "Hours":"08:00:00",
+            "NoOfEmployeesRequired":1,
+            "SubgroupID":1,
+            "JobtypeID":2,
+            "JobStatusID":4,
+            "JobCustomData":[
+               
+            ],
+            "Jobtype":null,
+            "UnavailableEmployeesForJob":[
+               
+            ]
+         },
+         {
+            "JobID":4,
+            "JobStartDate":"2020-08-30T08:00:00",
+            "JobStartTime":"00:00:00",
+            "JobEndDate":"2020-08-30T16:00:00",
+            "JobEndTime":"00:00:00",
+            "Hours":"08:00:00",
+            "NoOfEmployeesRequired":1,
+            "SubgroupID":1,
+            "JobtypeID":2,
+            "JobStatusID":4,
+            "JobCustomData":[
+               
+            ],
+            "Jobtype":null,
+            "UnavailableEmployeesForJob":[
+               
+            ]
+         }
+      ]
+   },
+   "PayPeriodDTO":null
+}

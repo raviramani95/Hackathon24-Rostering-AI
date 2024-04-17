@@ -1,0 +1,29 @@
+﻿"JobsOutisedOFRange" :
+[
+	{
+	  "JobID": 1,
+	  "JobStartDate": "2020-03-03T00:00:00",
+	  "JobEndDate": "2020-03-03T00:00:00",
+	  "Hours1": "02:00:00",
+	  "Hours2": "02:00:00",
+	  "Hours3": "02:00:00",
+	  "Hours4": "02:00:00",
+	  "Hours" : "08:00:00",
+	  "JobTypeID": 2,
+	  "EmployeeAssigments" : 
+	  [
+		1,
+		2,
+		3
+	  ],
+	  "JobCustomData": [
+		{
+		  "CustomDataID": 1,
+		  "CustomDataLookupID": null,
+		  "CustomDataLookupContent": null,
+		  "NumberValue": null,
+		  "TextValue": "Emma"
+		}
+	  ]
+	}
+]

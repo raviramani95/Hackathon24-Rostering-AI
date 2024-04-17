@@ -1,0 +1,443 @@
+{
+  "MaxNumOfJobsAtSameTime": 1,
+  "MaxTime": 300.0,
+  "NumberOfEmployees": 4,
+  "NumberOfJobs": 3,
+  "StartDayOfTheWeek": "Monday",
+  "Maximize": true,
+  "StopAtFirstNonMaximizeSolution": false,
+  "StopAtLastNonMaximizeSolution": false,
+  "FinalConsoleOutput": false,
+  "PrintSolutions": false,
+  "IgnoreAleardyAssignedEmployees": false,
+  "SetRestictedNumberOfEmployees": false,
+  "Employees": [
+    {
+      "Id": 364,
+      "JobTypeID": null,
+      "StartDate": "2007-03-04T00:00:00",
+      "LeaveDate": null,
+      "DateOfBirth": null,
+      "TimeBandBaseDate": null,
+      "RosterBaseDate": null,
+      "EmployeeNumber": null,
+      "Firstname": "Mladen",
+      "Surname": "Sladojevic",
+      "Address2": null,
+      "Address1": null,
+      "Address3": "Apatin",
+      "CostCode": "12345",
+      "Address4": "Austria",
+      "TelephoneNumber": null,
+      "MobileNumber": null,
+      "TargetRuleGroup": null,
+      "Email": "mladen.sladojevic@panonit.com",
+      "Username": "mladen.sladojevic",
+      "Profile": null,
+      "Gender": "Male",
+      "Location": null,
+      "Department": null,
+      "Division": null,
+      "JobTitle": null,
+      "Team": null,
+      "Class": "Klasa1",
+      "TimeBandRule": null,
+      "Roster": null,
+      "Notification": "Email",
+      "Manager": "  ",
+      "JobType": null,
+      "PayRate": null,
+      "MaxHours1": 3,
+      "MaxHours2": null,
+      "MaxHours3": null,
+      "MaxHours4": null,
+      "MaxHours5": null,
+      "AllowedTrades": false,
+      "Availability": false,
+      "NightWorker": true
+    },
+    {
+      "Id": 365,
+      "JobTypeID": null,
+      "StartDate": "2007-04-03T00:00:00",
+      "LeaveDate": null,
+      "DateOfBirth": null,
+      "TimeBandBaseDate": null,
+      "RosterBaseDate": null,
+      "EmployeeNumber": null,
+      "Firstname": "Srxan",
+      "Surname": "Sladojevic",
+      "Address2": null,
+      "Address1": null,
+      "Address3": "Novi Sad",
+      "CostCode": "123",
+      "Address4": "Serbia",
+      "TelephoneNumber": null,
+      "MobileNumber": null,
+      "TargetRuleGroup": null,
+      "Email": "ssladojevic@gmail.com",
+      "Username": "srdjan.sladojevic",
+      "Profile": null,
+      "Gender": "Female",
+      "Location": null,
+      "Department": null,
+      "Division": null,
+      "JobTitle": null,
+      "Team": null,
+      "Class": "Klasa2",
+      "TimeBandRule": null,
+      "Roster": null,
+      "Notification": "Email",
+      "Manager": "  ",
+      "JobType": null,
+      "PayRate": null,
+      "MaxHours1": 3,
+      "MaxHours2": null,
+      "MaxHours3": null,
+      "MaxHours4": null,
+      "MaxHours5": null,
+      "AllowedTrades": false,
+      "Availability": false,
+      "NightWorker": true
+    },
+    {
+      "Id": 366,
+      "JobTypeID": 9,
+      "StartDate": "2019-10-08T00:00:00",
+      "LeaveDate": null,
+      "DateOfBirth": null,
+      "TimeBandBaseDate": null,
+      "RosterBaseDate": null,
+      "EmployeeNumber": null,
+      "Firstname": "Milos",
+      "Surname": "Vranic",
+      "Address2": null,
+      "Address1": null,
+      "Address3": "Novi Sad",
+      "CostCode": null,
+      "Address4": "Serbia",
+      "TelephoneNumber": "3",
+      "MobileNumber": null,
+      "TargetRuleGroup": null,
+      "Email": "milos.vranic@panonit.com",
+      "Username": "milos.vranic",
+      "Profile": null,
+      "Gender": "Male",
+      "Location": null,
+      "Department": null,
+      "Division": null,
+      "JobTitle": null,
+      "Team": null,
+      "Class": null,
+      "TimeBandRule": null,
+      "Roster": null,
+      "Notification": "Email",
+      "Manager": "  ",
+      "JobType": "Doctor JT",
+      "PayRate": null,
+      "MaxHours1": 1,
+      "MaxHours2": null,
+      "MaxHours3": null,
+      "MaxHours4": null,
+      "MaxHours5": null,
+      "AllowedTrades": false,
+      "Availability": false,
+      "NightWorker": true
+    },
+    {
+      "Id": 367,
+      "JobTypeID": 9,
+      "StartDate": "2013-01-01T00:00:00",
+      "LeaveDate": null,
+      "DateOfBirth": null,
+      "TimeBandBaseDate": null,
+      "RosterBaseDate": null,
+      "EmployeeNumber": null,
+      "Firstname": "Vladimir",
+      "Surname": "Gajinov",
+      "Address2": null,
+      "Address1": null,
+      "Address3": "Novi Sad",
+      "CostCode": null,
+      "Address4": "Macedonia",
+      "TelephoneNumber": null,
+      "MobileNumber": null,
+      "TargetRuleGroup": null,
+      "Email": "vladimir.gajinov@panonit.com",
+      "Username": "vladimir.gajinov",
+      "Profile": null,
+      "Gender": "Male",
+      "Location": null,
+      "Department": null,
+      "Division": null,
+      "JobTitle": null,
+      "Team": null,
+      "Class": null,
+      "TimeBandRule": null,
+      "Roster": null,
+      "Notification": "Push",
+      "Manager": "  ",
+      "JobType": "Doctor JT",
+      "PayRate": null,
+      "MaxHours1": 1,
+      "MaxHours2": null,
+      "MaxHours3": null,
+      "MaxHours4": null,
+      "MaxHours5": null,
+      "AllowedTrades": true,
+      "Availability": false,
+      "NightWorker": true
+    }
+  ],
+  "EmployeeAssigments": [],
+  "JobsForSolver": [],
+  "ScheduleRankings": [
+    {
+      "Id": 12,
+      "SortOrder": 1,
+      "RankingRuleID": 12,
+      "RankingTypeID": 2,
+      "ScheduleID": 29
+    }
+  ],
+  "RankingRules": [
+    {
+      "Id": 12,
+      "ReverseOrder": false,
+      "DateRange": null,
+      "Offset": null,
+      "Amount": null,
+      "BaseDate": null,
+      "BaseDateRange": null,
+      "DayOfWeek": null,
+      "CountOvernights": null,
+      "JobStartFrom": null,
+      "JobStartTo": null,
+      "JobEndFrom": null,
+      "JobEndTo": null,
+      "ComparasionMode": null,
+      "ComparasionValue": null,
+      "RestrictedToJobTypeID": 9,
+      "JobType": null
+    }
+  ],
+  "AllConstraintRules": [
+    {
+      "Id": 1,
+      "Name": "Not Already Assigned"
+    },
+    {
+      "Id": 2,
+      "Name": "Maximum Number Of Hours"
+    },
+    {
+      "Id": 3,
+      "Name": "Employee Leaver Status"
+    },
+    {
+      "Id": 4,
+      "Name": "Maximum Number Of Days Of The Week"
+    }
+  ],
+  "RankingTypes": [
+    {
+      "Id": 1,
+      "Name": "Scheduled Hours"
+    },
+    {
+      "Id": 2,
+      "Name": "Default job"
+    },
+    {
+      "Id": 3,
+      "Name": "Job Type Frequency"
+    },
+    {
+      "Id": 4,
+      "Name": "Day of week frequency"
+    }
+  ],
+  "SkillMatrices": [
+    {
+      "EmployeeID": 364,
+      "SkillCodeID": 1,
+      "Value": true
+    },
+    {
+      "EmployeeID": 364,
+      "SkillCodeID": 2,
+      "Value": false
+    },
+    {
+      "EmployeeID": 364,
+      "SkillCodeID": 3,
+      "Value": false
+    },
+    {
+      "EmployeeID": 365,
+      "SkillCodeID": 1,
+      "Value": true
+    },
+    {
+      "EmployeeID": 365,
+      "SkillCodeID": 2,
+      "Value": false
+    },
+    {
+      "EmployeeID": 365,
+      "SkillCodeID": 3,
+      "Value": false
+    },
+    {
+      "EmployeeID": 366,
+      "SkillCodeID": 1,
+      "Value": true
+    },
+    {
+      "EmployeeID": 366,
+      "SkillCodeID": 2,
+      "Value": false
+    },
+    {
+      "EmployeeID": 366,
+      "SkillCodeID": 3,
+      "Value": false
+    },
+    {
+      "EmployeeID": 367,
+      "SkillCodeID": 1,
+      "Value": true
+    },
+    {
+      "EmployeeID": 367,
+      "SkillCodeID": 2,
+      "Value": false
+    },
+    {
+      "EmployeeID": 367,
+      "SkillCodeID": 3,
+      "Value": false
+    }
+  ],
+  "Schedule": {
+    "ScheduleID": 29,
+    "ScheduleStartDate": "2020-01-01T00:00:00",
+    "ScheduleEndDate": "2020-01-31T00:00:00",
+    "OnCallSlots": null,
+    "ScheduleActiveConstraints": [
+      {
+        "Id": 55,
+        "ConstraintRuleID": 1,
+        "ScheduleID": 29,
+        "EmployeeAID": null,
+        "EmployeeBID": null,
+        "JobTypeID": null,
+        "CustomDataFieldID": null,
+        "ConstraintName": "Not Already Assigned",
+        "DateRangeType": null,
+        "Offset": null,
+        "BaseDate": null,
+        "BaseDateRange": null,
+        "HoursType": null,
+        "SetValue": null,
+        "MaxHours": null,
+        "IsNightWorker": null,
+        "ComparationMode": null,
+        "ComparationValue": null,
+        "Amount": null,
+        "MaximalCount": null,
+        "DayOfWeek": null,
+        "TimePeriod": null,
+        "AmountOfDays": null,
+        "AmountOfHours": null,
+        "SkipBlankPeriods": null,
+        "ReferencePeriod": null,
+        "MustBeConsecutive": null,
+        "MinimumRestPeriod": null,
+        "MinimumGap": null,
+        "Age": null,
+        "BetweenTimeA": null,
+        "BetweenTimeB": null,
+        "RosterRule": null,
+        "IsCountOvernights": null,
+        "IsConstraintActive": true,
+        "Operator": null,
+        "EmployeeField": null,
+        "Schedule": null,
+        "ConstraintRule": null,
+        "EmployeeA": null,
+        "EmployeeB": null,
+        "JobType": null,
+        "CustomDataField": null
+      }
+    ],
+    "ScheduleCustomData": [],
+    "ScheduleJobs": [
+      {
+        "JobID": 265,
+        "JobStartDate": "2020-01-27T00:00:00",
+        "JobStartTime": "08:00:00",
+        "JobEndDate": "2020-01-27T00:00:00",
+        "JobEndTime": "16:00:00",
+        "Hours": "08:00:00",
+        "NoOfEmployeesRequired": 2,
+        "SubgroupID": 32,
+        "JobtypeID": 9,
+        "JobStatusID": 2,
+        "JobCustomData": [],
+        "Jobtype": {
+          "JobtypeID": 9,
+          "TimeUnitName": null,
+          "TimeUnitValue": 0,
+          "SkillCodeFormula": "1",
+          "ComparisonRules": []
+        }
+      },
+      {
+        "JobID": 266,
+        "JobStartDate": "2020-01-20T00:00:00",
+        "JobStartTime": "08:00:00",
+        "JobEndDate": "2020-01-20T00:00:00",
+        "JobEndTime": "16:00:00",
+        "Hours": "08:00:00",
+        "NoOfEmployeesRequired": 2,
+        "SubgroupID": 32,
+        "JobtypeID": 9,
+        "JobStatusID": 2,
+        "JobCustomData": [],
+        "Jobtype": {
+          "JobtypeID": 9,
+          "TimeUnitName": null,
+          "TimeUnitValue": 0,
+          "SkillCodeFormula": "1",
+          "ComparisonRules": []
+        }
+      },
+      {
+        "JobID": 267,
+        "JobStartDate": "2020-01-27T00:00:00",
+        "JobStartTime": "17:00:00",
+        "JobEndDate": "2020-01-27T00:00:00",
+        "JobEndTime": "23:00:00",
+        "Hours": "08:00:00",
+        "NoOfEmployeesRequired": 4,
+        "SubgroupID": 32,
+        "JobtypeID": 9,
+        "JobStatusID": 6,
+        "JobCustomData": [],
+        "Jobtype": {
+          "JobtypeID": 9,
+          "TimeUnitName": null,
+          "TimeUnitValue": 0,
+          "SkillCodeFormula": "1",
+          "ComparisonRules": []
+        }
+      }
+    ]
+  },
+  "PayPeriodDTO": {
+    "PayPeriodStartDate": "2019-12-01T00:00:00",
+    "PayPeriodNumberOfDays": null,
+    "IsMonthlyPayPeriod": true
+  }
+}

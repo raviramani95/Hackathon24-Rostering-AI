@@ -1,0 +1,6 @@
+@AutoRosteringAI_HostAddress = http://localhost:5216
+
+GET {{AutoRosteringAI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

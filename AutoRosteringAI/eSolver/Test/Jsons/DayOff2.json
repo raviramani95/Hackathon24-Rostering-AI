@@ -1,0 +1,844 @@
+﻿{
+   "JobsAndAvailableEmployees":null,
+   "MaxNumOfJobsAtSameTime":1,
+   "MaxTime":300.0,
+   "NumberOfEmployees":1,
+   "NumberOfJobs":2,
+   "StartDayOfTheWeek":"Monday",
+   "Maximize":true,
+   "StopAtFirstNonMaximizeSolution":false,
+   "StopAtLastNonMaximizeSolution":false,
+   "FinalConsoleOutput":false,
+   "PrintSolutions":false,
+   "IgnoreAleardyAssignedEmployees":false,
+   "SetRestictedNumberOfEmployees":false,
+   "Employees":[
+      {
+         "Id":1,
+         "JobTypeID":null,
+         "StartDate":"2020-08-01T00:00:00",
+         "LeaveDate":null,
+         "DateOfBirth":null,
+         "TimeBandBaseDate":null,
+         "RosterBaseDate":null,
+         "EmployeeNumber":null,
+         "Firstname":"Zorica",
+         "Surname":"Babić",
+         "Address2":"",
+         "Address1":"",
+         "Address3":"",
+         "CostCode":null,
+         "Address4":"",
+         "TelephoneNumber":"",
+         "MobileNumber":"",
+         "TargetRuleGroup":null,
+         "Email":"zorica.b96@gmail.com",
+         "Username":"Zorica",
+         "EmployeeProfile":null,
+         "Gender":null,
+         "Location":null,
+         "Department":null,
+         "Division":null,
+         "JobTitle":null,
+         "Team":null,
+         "Class":null,
+         "TimeBandRule":null,
+         "Roster":null,
+         "Notification":"Push",
+         "Manager":null,
+         "JobType":null,
+         "PayRate":null,
+         "MaxHours1":null,
+         "MaxHours2":null,
+         "MaxHours3":null,
+         "MaxHours4":null,
+         "MaxHours5":null,
+         "AllowedTrades":false,
+         "Availability":false,
+         "NightWorker":false
+      },
+      {
+         "Id":2,
+         "JobTypeID":null,
+         "StartDate":"2020-08-01T00:00:00",
+         "LeaveDate":null,
+         "DateOfBirth":null,
+         "TimeBandBaseDate":null,
+         "RosterBaseDate":null,
+         "EmployeeNumber":null,
+         "Firstname":"Zorica2",
+         "Surname":"Babić",
+         "Address2":"",
+         "Address1":"",
+         "Address3":"",
+         "CostCode":null,
+         "Address4":"",
+         "TelephoneNumber":"",
+         "MobileNumber":"",
+         "TargetRuleGroup":null,
+         "Email":"zorica.b96@gmail.com",
+         "Username":"Zorica",
+         "EmployeeProfile":null,
+         "Gender":null,
+         "Location":null,
+         "Department":null,
+         "Division":null,
+         "JobTitle":null,
+         "Team":null,
+         "Class":null,
+         "TimeBandRule":null,
+         "Roster":null,
+         "Notification":"Push",
+         "Manager":null,
+         "JobType":null,
+         "PayRate":null,
+         "MaxHours1":null,
+         "MaxHours2":null,
+         "MaxHours3":null,
+         "MaxHours4":null,
+         "MaxHours5":null,
+         "AllowedTrades":false,
+         "Availability":false,
+         "NightWorker":false
+      }
+   ],
+   "JobsOutisedOFRange" :
+   [
+   ],
+   "ScheduleRankings":[
+
+   ],
+   "RankingRules":[
+
+   ],
+   "AllConstraintRules":[
+      {
+         "Id":1,
+         "Name":"Not Already Assigned"
+      },
+      {
+         "Id":2,
+         "Name":"Maximum Number Of Hours"
+      },
+      {
+         "Id":3,
+         "Name":"Employee Leaver Status"
+      },
+      {
+         "Id":4,
+         "Name":"Maximum Number Of Days Of The Week"
+      },
+      {
+         "Id":5,
+         "Name":"Employee Must Not Work With Another Employee"
+      },
+      {
+         "Id":6,
+         "Name":"Employee Must Work With Another Employee"
+      },
+      {
+         "Id":7,
+         "Name":"Maximum Number Of Job Types"
+      },
+      {
+         "Id":8,
+         "Name":"Maximum Number Of Job Types Consecutively"
+      },
+      {
+         "Id":9,
+         "Name":"Employee Field Value"
+      },
+      {
+         "Id":10,
+         "Name":"Split Shifts"
+      },
+      {
+         "Id":11,
+         "Name":"Days Off Within A Period"
+      }
+   ],
+   "RankingTypes":[
+      {
+         "Id":1,
+         "Name":"Scheduled Hours"
+      },
+      {
+         "Id":2,
+         "Name":"Default job"
+      },
+      {
+         "Id":3,
+         "Name":"Job Type Frequency"
+      },
+      {
+         "Id":4,
+         "Name":"Day of week frequency"
+      },
+      {
+         "Id":5,
+         "Name":"Employee field value"
+      }
+   ],
+   "Schedule":{
+      "ScheduleID":1,
+      "ScheduleStartDate":"2020-08-01T00:00:00",
+      "ScheduleEndDate":"2020-08-31T00:00:00",
+      "OnCallSlots":null,
+      "ScheduleActiveConstraints":[
+         {
+            "ConstraintRuleID":1,
+            "ScheduleID":1,
+            "ConstraintName":"Not Already Assigned",
+            "IsConstraintActive":true,
+            "Schedule":null,
+            "ConstraintRule":null,
+            "ConstraintEMWWAEs":null,
+            "ConstraintEMNWWAEs":null,
+            "ConstraintSetValues":null,
+            "ConstraintMNODOTW":null,
+            "ConstraintMNOH":null,
+            "ConstraintSS":null,
+            "Id":1
+         },
+         {
+            "ConstraintRuleID":11,
+            "ScheduleID":1,
+            "ConstraintName":"fsdf",
+            "IsConstraintActive":false,
+            "Schedule":null,
+            "ConstraintRule":null,
+            "ConstraintEMWWAEs":null,
+            "ConstraintEMNWWAEs":null,
+            "ConstraintSetValues":null,
+            "ConstraintMNODOTW":null,
+            "ConstraintMNOH":null,
+            "ConstraintSS":null,
+            "ConstraintDOWAP":{
+                "NumberOfRestDays":1,
+                "MustBeConsecutive": false,
+                "StartDay": "Saturday",
+                "IsPayPeriod":false,
+                "IsMonth":false,
+                "IsWeek":false,
+                "ConstraintID":2,
+                "CustomDataID":null,
+                "ConstraintSetValueID":null,
+                "ConstraintCustomDataID":2,
+                "ConstraintCustomRangeID":null,
+                "ConstraintBaseDateRangeID":null,
+                "CustomData":null,
+                "ConstraintSetValue":null,
+                "ConstraintCustomData":
+                {
+                    "ConstraintID": 1,
+                    "CustomDataID": 1,
+                    "Operator" : "=",
+                    "EmployeeField" : "Firstname",
+                },
+                "ConstraintCustomRange":
+                {
+                    "ConstraintID": 1, 
+                    "Offset":2,
+                    "Amount":5,
+                    "Id":1
+                },
+                "ConstraintBaseDateRange":null,
+                "Id":1
+            }
+         }
+      ],
+      "ScheduleJobs":[
+         {
+            "JobID":21,
+            "JobStartDate":"2020-08-01T18:00:00",
+            "JobStartTime":"00:00:00",
+            "JobEndDate":"2020-08-01T20:00:00",
+            "JobEndTime":"00:00:00",
+            "Hours":"08:00:00",
+            "NoOfEmployeesRequired":2,
+            "SubgroupID":1,
+            "JobtypeID":2,
+            "JobStatusID":6,
+            "JobCustomData":[
+
+            ],
+            "Jobtype":null,
+            "UnavailableEmployeesForJob":[
+
+            ]
+         },
+                  {
+            "JobID":22,
+            "JobStartDate":"2020-08-02T18:00:00",
+            "JobStartTime":"00:00:00",
+            "JobEndDate":"2020-08-02T20:00:00",
+            "JobEndTime":"00:00:00",
+            "Hours":"08:00:00",
+            "NoOfEmployeesRequired":2,
+            "SubgroupID":1,
+            "JobtypeID":2,
+            "JobStatusID":6,
+            "JobCustomData":[
+
+            ],
+            "Jobtype":null,
+            "UnavailableEmployeesForJob":[
+
+            ]
+         },
+                  {
+            "JobID":23,
+            "JobStartDate":"2020-08-03T18:00:00",
+            "JobStartTime":"00:00:00",
+            "JobEndDate":"2020-08-03T20:00:00",
+            "JobEndTime":"00:00:00",
+            "Hours":"08:00:00",
+            "NoOfEmployeesRequired":2,
+            "SubgroupID":1,
+            "JobtypeID":2,
+            "JobStatusID":6,
+            "JobCustomData":[
+
+            ],
+            "Jobtype":null,
+            "UnavailableEmployeesForJob":[
+
+            ]
+         },
+                  {
+            "JobID":24,
+            "JobStartDate":"2020-08-04T18:00:00",
+            "JobStartTime":"00:00:00",
+            "JobEndDate":"2020-08-04T20:00:00",
+            "JobEndTime":"00:00:00",
+            "Hours":"08:00:00",
+            "NoOfEmployeesRequired":2,
+            "SubgroupID":1,
+            "JobtypeID":2,
+            "JobStatusID":6,
+            "JobCustomData":[
+
+            ],
+            "Jobtype":null,
+            "UnavailableEmployeesForJob":[
+
+            ]
+         },
+                  {
+            "JobID":25,
+            "JobStartDate":"2020-08-05T18:00:00",
+            "JobStartTime":"00:00:00",
+            "JobEndDate":"2020-08-05T20:00:00",
+            "JobEndTime":"00:00:00",
+            "Hours":"08:00:00",
+            "NoOfEmployeesRequired":2,
+            "SubgroupID":1,
+            "JobtypeID":2,
+            "JobStatusID":6,
+            "JobCustomData":[
+
+            ],
+            "Jobtype":null,
+            "UnavailableEmployeesForJob":[
+
+            ]
+         },
+                  {
+            "JobID":26,
+            "JobStartDate":"2020-08-06T18:00:00",
+            "JobStartTime":"00:00:00",
+            "JobEndDate":"2020-08-06T20:00:00",
+            "JobEndTime":"00:00:00",
+            "Hours":"08:00:00",
+            "NoOfEmployeesRequired":2,
+            "SubgroupID":1,
+            "JobtypeID":2,
+            "JobStatusID":6,
+            "JobCustomData":[
+
+            ],
+            "Jobtype":null,
+            "UnavailableEmployeesForJob":[
+
+            ]
+         },
+                  {
+            "JobID":27,
+            "JobStartDate":"2020-08-07T18:00:00",
+            "JobStartTime":"00:00:00",
+            "JobEndDate":"2020-08-07T20:00:00",
+            "JobEndTime":"00:00:00",
+            "Hours":"08:00:00",
+            "NoOfEmployeesRequired":2,
+            "SubgroupID":1,
+            "JobtypeID":2,
+            "JobStatusID":6,
+            "JobCustomData":[
+
+            ],
+            "Jobtype":null,
+            "UnavailableEmployeesForJob":[
+
+            ]
+         },
+                  {
+            "JobID":28,
+            "JobStartDate":"2020-08-08T18:00:00",
+            "JobStartTime":"00:00:00",
+            "JobEndDate":"2020-08-08T20:00:00",
+            "JobEndTime":"00:00:00",
+            "Hours":"08:00:00",
+            "NoOfEmployeesRequired":2,
+            "SubgroupID":1,
+            "JobtypeID":2,
+            "JobStatusID":6,
+            "JobCustomData":[
+
+            ],
+            "Jobtype":null,
+            "UnavailableEmployeesForJob":[
+
+            ]
+         },
+                  {
+            "JobID":29,
+            "JobStartDate":"2020-08-09T18:00:00",
+            "JobStartTime":"00:00:00",
+            "JobEndDate":"2020-08-09T20:00:00",
+            "JobEndTime":"00:00:00",
+            "Hours":"08:00:00",
+            "NoOfEmployeesRequired":2,
+            "SubgroupID":1,
+            "JobtypeID":2,
+            "JobStatusID":6,
+            "JobCustomData":[
+
+            ],
+            "Jobtype":null,
+            "UnavailableEmployeesForJob":[
+
+            ]
+         },
+                  {
+            "JobID":30,
+            "JobStartDate":"2020-08-10T18:00:00",
+            "JobStartTime":"00:00:00",
+            "JobEndDate":"2020-08-10T20:00:00",
+            "JobEndTime":"00:00:00",
+            "Hours":"08:00:00",
+            "NoOfEmployeesRequired":2,
+            "SubgroupID":1,
+            "JobtypeID":2,
+            "JobStatusID":6,
+            "JobCustomData":[
+
+            ],
+            "Jobtype":null,
+            "UnavailableEmployeesForJob":[
+
+            ]
+         },
+                  {
+            "JobID":31,
+            "JobStartDate":"2020-08-11T18:00:00",
+            "JobStartTime":"00:00:00",
+            "JobEndDate":"2020-08-11T20:00:00",
+            "JobEndTime":"00:00:00",
+            "Hours":"08:00:00",
+            "NoOfEmployeesRequired":2,
+            "SubgroupID":1,
+            "JobtypeID":2,
+            "JobStatusID":6,
+            "JobCustomData":[
+
+            ],
+            "Jobtype":null,
+            "UnavailableEmployeesForJob":[
+
+            ]
+         },
+                  {
+            "JobID":32,
+            "JobStartDate":"2020-08-12T18:00:00",
+            "JobStartTime":"00:00:00",
+            "JobEndDate":"2020-08-12T20:00:00",
+            "JobEndTime":"00:00:00",
+            "Hours":"08:00:00",
+            "NoOfEmployeesRequired":2,
+            "SubgroupID":1,
+            "JobtypeID":2,
+            "JobStatusID":6,
+            "JobCustomData":[
+
+            ],
+            "Jobtype":null,
+            "UnavailableEmployeesForJob":[
+
+            ]
+         },
+                  {
+            "JobID":33,
+            "JobStartDate":"2020-08-13T18:00:00",
+            "JobStartTime":"00:00:00",
+            "JobEndDate":"2020-08-13T18:00:00",
+            "JobEndTime":"00:00:00",
+            "Hours":"08:00:00",
+            "NoOfEmployeesRequired":2,
+            "SubgroupID":1,
+            "JobtypeID":2,
+            "JobStatusID":6,
+            "JobCustomData":[
+
+            ],
+            "Jobtype":null,
+            "UnavailableEmployeesForJob":[
+
+            ]
+         },
+                  {
+            "JobID":34,
+            "JobStartDate":"2020-08-14T18:00:00",
+            "JobStartTime":"00:00:00",
+            "JobEndDate":"2020-08-14T18:00:00",
+            "JobEndTime":"00:00:00",
+            "Hours":"08:00:00",
+            "NoOfEmployeesRequired":2,
+            "SubgroupID":1,
+            "JobtypeID":2,
+            "JobStatusID":6,
+            "JobCustomData":[
+
+            ],
+            "Jobtype":null,
+            "UnavailableEmployeesForJob":[
+
+            ]
+         },
+                  {
+            "JobID":35,
+            "JobStartDate":"2020-08-15T18:00:00",
+            "JobStartTime":"00:00:00",
+            "JobEndDate":"2020-08-15T20:00:00",
+            "JobEndTime":"00:00:00",
+            "Hours":"08:00:00",
+            "NoOfEmployeesRequired":2,
+            "SubgroupID":1,
+            "JobtypeID":2,
+            "JobStatusID":6,
+            "JobCustomData":[
+
+            ],
+            "Jobtype":null,
+            "UnavailableEmployeesForJob":[
+
+            ]
+         },
+                  {
+            "JobID":36,
+            "JobStartDate":"2020-08-16T18:00:00",
+            "JobStartTime":"00:00:00",
+            "JobEndDate":"2020-08-16T20:00:00",
+            "JobEndTime":"00:00:00",
+            "Hours":"08:00:00",
+            "NoOfEmployeesRequired":2,
+            "SubgroupID":1,
+            "JobtypeID":2,
+            "JobStatusID":6,
+            "JobCustomData":[
+
+            ],
+            "Jobtype":null,
+            "UnavailableEmployeesForJob":[
+
+            ]
+         },
+                  {
+            "JobID":37,
+            "JobStartDate":"2020-08-17T18:00:00",
+            "JobStartTime":"00:00:00",
+            "JobEndDate":"2020-08-17T20:00:00",
+            "JobEndTime":"00:00:00",
+            "Hours":"08:00:00",
+            "NoOfEmployeesRequired":2,
+            "SubgroupID":1,
+            "JobtypeID":2,
+            "JobStatusID":6,
+            "JobCustomData":[
+
+            ],
+            "Jobtype":null,
+            "UnavailableEmployeesForJob":[
+
+            ]
+         },
+                  {
+            "JobID":38,
+            "JobStartDate":"2020-08-18T18:00:00",
+            "JobStartTime":"00:00:00",
+            "JobEndDate":"2020-08-18T20:00:00",
+            "JobEndTime":"00:00:00",
+            "Hours":"08:00:00",
+            "NoOfEmployeesRequired":2,
+            "SubgroupID":1,
+            "JobtypeID":2,
+            "JobStatusID":6,
+            "JobCustomData":[
+
+            ],
+            "Jobtype":null,
+            "UnavailableEmployeesForJob":[
+
+            ]
+         },
+                  {
+            "JobID":39,
+            "JobStartDate":"2020-08-19T18:00:00",
+            "JobStartTime":"00:00:00",
+            "JobEndDate":"2020-08-19T20:00:00",
+            "JobEndTime":"00:00:00",
+            "Hours":"08:00:00",
+            "NoOfEmployeesRequired":2,
+            "SubgroupID":1,
+            "JobtypeID":2,
+            "JobStatusID":6,
+            "JobCustomData":[
+
+            ],
+            "Jobtype":null,
+            "UnavailableEmployeesForJob":[
+
+            ]
+         },
+                  {
+            "JobID":40,
+            "JobStartDate":"2020-08-20T18:00:00",
+            "JobStartTime":"00:00:00",
+            "JobEndDate":"2020-08-20T20:00:00",
+            "JobEndTime":"00:00:00",
+            "Hours":"08:00:00",
+            "NoOfEmployeesRequired":2,
+            "SubgroupID":1,
+            "JobtypeID":2,
+            "JobStatusID":6,
+            "JobCustomData":[
+
+            ],
+            "Jobtype":null,
+            "UnavailableEmployeesForJob":[
+
+            ]
+         },
+                  {
+            "JobID":41,
+            "JobStartDate":"2020-08-21T18:00:00",
+            "JobStartTime":"00:00:00",
+            "JobEndDate":"2020-08-21T20:00:00",
+            "JobEndTime":"00:00:00",
+            "Hours":"08:00:00",
+            "NoOfEmployeesRequired":2,
+            "SubgroupID":1,
+            "JobtypeID":2,
+            "JobStatusID":6,
+            "JobCustomData":[
+
+            ],
+            "Jobtype":null,
+            "UnavailableEmployeesForJob":[
+
+            ]
+         },
+                  {
+            "JobID":42,
+            "JobStartDate":"2020-08-22T18:00:00",
+            "JobStartTime":"00:00:00",
+            "JobEndDate":"2020-08-22T20:00:00",
+            "JobEndTime":"00:00:00",
+            "Hours":"08:00:00",
+            "NoOfEmployeesRequired":2,
+            "SubgroupID":1,
+            "JobtypeID":2,
+            "JobStatusID":6,
+            "JobCustomData":[
+
+            ],
+            "Jobtype":null,
+            "UnavailableEmployeesForJob":[
+
+            ]
+         },
+                  {
+            "JobID":43,
+            "JobStartDate":"2020-08-23T18:00:00",
+            "JobStartTime":"00:00:00",
+            "JobEndDate":"2020-08-23T20:00:00",
+            "JobEndTime":"00:00:00",
+            "Hours":"08:00:00",
+            "NoOfEmployeesRequired":2,
+            "SubgroupID":1,
+            "JobtypeID":2,
+            "JobStatusID":6,
+            "JobCustomData":[
+
+            ],
+            "Jobtype":null,
+            "UnavailableEmployeesForJob":[
+
+            ]
+         },
+                  {
+            "JobID":44,
+            "JobStartDate":"2020-08-24T18:00:00",
+            "JobStartTime":"00:00:00",
+            "JobEndDate":"2020-08-24T20:00:00",
+            "JobEndTime":"00:00:00",
+            "Hours":"08:00:00",
+            "NoOfEmployeesRequired":2,
+            "SubgroupID":1,
+            "JobtypeID":2,
+            "JobStatusID":6,
+            "JobCustomData":[
+
+            ],
+            "Jobtype":null,
+            "UnavailableEmployeesForJob":[
+
+            ]
+         },
+                  {
+            "JobID":45,
+            "JobStartDate":"2020-08-25T18:00:00",
+            "JobStartTime":"00:00:00",
+            "JobEndDate":"2020-08-25T20:00:00",
+            "JobEndTime":"00:00:00",
+            "Hours":"08:00:00",
+            "NoOfEmployeesRequired":2,
+            "SubgroupID":1,
+            "JobtypeID":2,
+            "JobStatusID":6,
+            "JobCustomData":[
+
+            ],
+            "Jobtype":null,
+            "UnavailableEmployeesForJob":[
+
+            ]
+         },
+                  {
+            "JobID":46,
+            "JobStartDate":"2020-08-26T18:00:00",
+            "JobStartTime":"00:00:00",
+            "JobEndDate":"2020-08-26T20:00:00",
+            "JobEndTime":"00:00:00",
+            "Hours":"08:00:00",
+            "NoOfEmployeesRequired":2,
+            "SubgroupID":1,
+            "JobtypeID":2,
+            "JobStatusID":6,
+            "JobCustomData":[
+
+            ],
+            "Jobtype":null,
+            "UnavailableEmployeesForJob":[
+
+            ]
+         },
+                  {
+            "JobID":47,
+            "JobStartDate":"2020-08-27T18:00:00",
+            "JobStartTime":"00:00:00",
+            "JobEndDate":"2020-08-27T20:00:00",
+            "JobEndTime":"00:00:00",
+            "Hours":"08:00:00",
+            "NoOfEmployeesRequired":2,
+            "SubgroupID":1,
+            "JobtypeID":2,
+            "JobStatusID":6,
+            "JobCustomData":[
+
+            ],
+            "Jobtype":null,
+            "UnavailableEmployeesForJob":[
+
+            ]
+         },
+                  {
+            "JobID":48,
+            "JobStartDate":"2020-08-28T18:00:00",
+            "JobStartTime":"00:00:00",
+            "JobEndDate":"2020-08-28T20:00:00",
+            "JobEndTime":"00:00:00",
+            "Hours":"08:00:00",
+            "NoOfEmployeesRequired":2,
+            "SubgroupID":1,
+            "JobtypeID":2,
+            "JobStatusID":6,
+            "JobCustomData":[
+
+            ],
+            "Jobtype":null,
+            "UnavailableEmployeesForJob":[
+
+            ]
+         },
+                  {
+            "JobID":49,
+            "JobStartDate":"2020-08-29T18:00:00",
+            "JobStartTime":"00:00:00",
+            "JobEndDate":"2020-08-29T20:00:00",
+            "JobEndTime":"00:00:00",
+            "Hours":"08:00:00",
+            "NoOfEmployeesRequired":2,
+            "SubgroupID":1,
+            "JobtypeID":2,
+            "JobStatusID":6,
+            "JobCustomData":[
+
+            ],
+            "Jobtype":null,
+            "UnavailableEmployeesForJob":[
+
+            ]
+         },
+                  {
+            "JobID":50,
+            "JobStartDate":"2020-08-30T18:00:00",
+            "JobStartTime":"00:00:00",
+            "JobEndDate":"2020-08-30T20:00:00",
+            "JobEndTime":"00:00:00",
+            "Hours":"08:00:00",
+            "NoOfEmployeesRequired":2,
+            "SubgroupID":1,
+            "JobtypeID":2,
+            "JobStatusID":6,
+            "JobCustomData":[
+
+            ],
+            "Jobtype":null,
+            "UnavailableEmployeesForJob":[
+
+            ]
+         },
+                  {
+            "JobID":51,
+            "JobStartDate":"2020-08-31T18:00:00",
+            "JobStartTime":"00:00:00",
+            "JobEndDate":"2020-08-31T20:00:00",
+            "JobEndTime":"00:00:00",
+            "Hours":"08:00:00",
+            "NoOfEmployeesRequired":2,
+            "SubgroupID":1,
+            "JobtypeID":2,
+            "JobStatusID":6,
+            "JobCustomData":[
+
+            ],
+            "Jobtype":null,
+            "UnavailableEmployeesForJob":[
+
+            ]
+       }
+
+      ]
+   },
+   "PayPeriodDTO":null
+}

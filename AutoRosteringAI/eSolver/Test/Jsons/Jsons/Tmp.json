@@ -1,0 +1,59 @@
+﻿, {
+  "Id": 1,
+  "ConstraintRuleID": 5,
+  "ScheduleID": 1,
+  "EmployeeAID": null,
+  "EmployeeBID": null,
+  "JobTypeID": null,
+  "CustomDataFieldID": null,
+  "ConstraintName": "Not Already Assigned",
+  "DateRangeType": null,
+  "Offset": null,
+  "BaseDate": null,
+  "BaseDateRange": null,
+  "HoursType": null,
+  "SetValue": null,
+  "MaxHours": null,
+  "IsNightWorker": null,
+  "ComparationMode": null,
+  "ComparationValue": null,
+  "Amount": null,
+  "MaximalCount": null,
+  "DayOfWeek": null,
+  "TimePeriod": null,
+  "AmountOfDays": null,
+  "AmountOfHours": null,
+  "SkipBlankPeriods": null,
+  "ReferencePeriod": 0,
+  "MustBeConsecutive": null,
+  "MinimumRestPeriod": null,
+  "MinimumGap": null,
+  "Age": null,
+  "BetweenTimeA": null,
+  "BetweenTimeB": null,
+  "RosterRule": null,
+  "IsCountOvernights": null,
+  "IsConstraintActive": true,
+  "Operator": null,
+  "EmployeeField": null,
+  "Schedule": null,
+  "ConstraintRule": null,
+  "EmployeeA": 1,
+  "EmployeeB": 2,
+  "JobType": null,
+  "CustomDataField": null
+}, {
+  "Id": 5,
+  "Name": "Employee Must Work With Another Employee"
+}, {
+  "Id": 6,
+  "Name": "Employee Must Not Work With Another Employee"
+},
+
+{
+  "id": 7,
+  "Name": "Maximum number of job types"
+}
+
+
+  "CustomDataField": null

@@ -1,0 +1,345 @@
+﻿
+"OVO"
+{
+  ...
+  "OutsideOfViewRange": {
+    "ViewSchedules": [
+      {
+        "ScheduleCustomData": [
+          {
+            "ScheduleID": 1,
+            "JobID": 2,
+            "CustomDataID": 1,
+            "CustomDataLookupID": null,
+            "CustomDataLookupContent": null,
+            "NumberValue": null,
+            "TextValue": "Emma"
+          },
+          {
+            "ScheduleID": 1,
+            "JobID": 2,
+            "CustomDataID": 1,
+            "CustomDataLookupID": null,
+            "CustomDataLookupContent": null,
+            "NumberValue": null,
+            "TextValue": "Emma"
+          },
+          {
+            "ScheduleID": 1,
+            "JobID": 2,
+            "CustomDataID": 1,
+            "CustomDataLookupID": null,
+            "CustomDataLookupContent": null,
+            "NumberValue": null,
+            "TextValue": "Emma"
+          }
+        ],
+        "Assigments": [
+          {
+            "EmployeeIDs": [
+              {
+                "id": 1
+              },
+              {
+                "id": 2
+              },
+              {
+                "id": 3
+              }
+            ],
+            "Job": {
+              "JobID": 1,
+              "JobStartDate": "2020-03-03T00:00:00",
+              "JobStartTime": "12:00:00",
+              "JobEndDate": "2020-03-03T00:00:00",
+              "JobEndTime": "14:00:00",
+              "Hours": "02:00:00",
+              "NoOfEmployeesRequired": 2,
+              "SubgroupID": 1,
+              "JobtypeID": 2,
+              "JobStatusID": 2,
+              "JobCustomData": [
+                {
+                  "ScheduleID": 1,
+                  "JobID": 1,
+                  "CustomDataID": 1,
+                  "CustomDataLookupID": null,
+                  "CustomDataLookupContent": null,
+                  "NumberValue": null,
+                  "TextValue": "Emma"
+                }
+              ],
+              "Jobtype": {
+                "JobtypeID": 2,
+                "TimeUnitName": null,
+                "TimeUnitValue": 0,
+                "SkillCodeFormula": "1",
+                "ComparisonRules": []
+              }
+            }
+          },
+          {
+            "EmployeeIDs": [
+              {
+                "id": 1
+              },
+              {
+                "id": 2
+              },
+              {
+                "id": 3
+              }
+            ],
+            "Job": {
+              "JobID": 1,
+              "JobStartDate": "2020-03-03T00:00:00",
+              "JobStartTime": "12:00:00",
+              "JobEndDate": "2020-03-03T00:00:00",
+              "JobEndTime": "14:00:00",
+              "Hours": "02:00:00",
+              "NoOfEmployeesRequired": 2,
+              "SubgroupID": 1,
+              "JobtypeID": 2,
+              "JobStatusID": 2,
+              "JobCustomData": [
+                {
+                  "ScheduleID": 1,
+                  "JobID": 1,
+                  "CustomDataID": 1,
+                  "CustomDataLookupID": null,
+                  "CustomDataLookupContent": null,
+                  "NumberValue": null,
+                  "TextValue": "Emma"
+                }
+              ],
+              "Jobtype": {
+                "JobtypeID": 2,
+                "TimeUnitName": null,
+                "TimeUnitValue": 0,
+                "SkillCodeFormula": "1",
+                "ComparisonRules": []
+              }
+            }
+          }
+        ]
+      },
+      {
+        "ScheduleCustomData": [
+          {
+            "ScheduleID": 1,
+            "JobID": 2,
+            "CustomDataID": 1,
+            "CustomDataLookupID": null,
+            "CustomDataLookupContent": null,
+            "NumberValue": null,
+            "TextValue": "Emma"
+          },
+          {
+            "ScheduleID": 1,
+            "JobID": 2,
+            "CustomDataID": 1,
+            "CustomDataLookupID": null,
+            "CustomDataLookupContent": null,
+            "NumberValue": null,
+            "TextValue": "Emma"
+          },
+          {
+            "ScheduleID": 1,
+            "JobID": 2,
+            "CustomDataID": 1,
+            "CustomDataLookupID": null,
+            "CustomDataLookupContent": null,
+            "NumberValue": null,
+            "TextValue": "Emma"
+          }
+        ],
+        "Assigments": [
+          {
+            "EmployeeIDs": [
+              {
+                "id": 1
+              },
+              {
+                "id": 2
+              },
+              {
+                "id": 3
+              }
+            ],
+            "Job": {
+              "JobID": 1,
+              "JobStartDate": "2020-03-03T00:00:00",
+              "JobStartTime": "12:00:00",
+              "JobEndDate": "2020-03-03T00:00:00",
+              "JobEndTime": "14:00:00",
+              "Hours": "02:00:00",
+              "NoOfEmployeesRequired": 2,
+              "SubgroupID": 1,
+              "JobtypeID": 2,
+              "JobStatusID": 2,
+              "JobCustomData": [
+                {
+                  "ScheduleID": 1,
+                  "JobID": 1,
+                  "CustomDataID": 1,
+                  "CustomDataLookupID": null,
+                  "CustomDataLookupContent": null,
+                  "NumberValue": null,
+                  "TextValue": "Emma"
+                }
+              ],
+              "Jobtype": {
+                "JobtypeID": 2,
+                "TimeUnitName": null,
+                "TimeUnitValue": 0,
+                "SkillCodeFormula": "1",
+                "ComparisonRules": []
+              }
+            }
+          },
+          {
+            "EmployeeIDs": [
+              {
+                "id": 1
+              },
+              {
+                "id": 2
+              },
+              {
+                "id": 3
+              }
+            ],
+            "Job": {
+              "JobID": 1,
+              "JobStartDate": "2020-03-03T00:00:00",
+              "JobStartTime": "12:00:00",
+              "JobEndDate": "2020-03-03T00:00:00",
+              "JobEndTime": "14:00:00",
+              "Hours": "02:00:00",
+              "NoOfEmployeesRequired": 2,
+              "SubgroupID": 1,
+              "JobtypeID": 2,
+              "JobStatusID": 2,
+              "JobCustomData": [
+                {
+                  "ScheduleID": 1,
+                  "JobID": 1,
+                  "CustomDataID": 1,
+                  "CustomDataLookupID": null,
+                  "CustomDataLookupContent": null,
+                  "NumberValue": null,
+                  "TextValue": "Emma"
+                }
+              ],
+              "Jobtype": {
+                "JobtypeID": 2,
+                "TimeUnitName": null,
+                "TimeUnitValue": 0,
+                "SkillCodeFormula": "1",
+                "ComparisonRules": []
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+  ...
+}
+
+"UMESTO" "OVOGA",
+{
+  "...": null,
+  "EmployeeAssigments": [
+    {
+      "EmployeeID": 5,
+      "JobID": 6,
+      "JobStartDate": "2020-03-02T00:00:00",
+      "JobEndDate": "2020-03-02T00:00:00",
+      "JobStartTime": "08:00:00",
+      "JobEndTime": "10:00:00"
+    },
+    {
+      "EmployeeID": 2,
+      "JobID": 7,
+      "JobStartDate": "2020-03-04T00:00:00",
+      "JobEndDate": "2020-03-04T00:00:00",
+      "JobStartTime": "08:00:00",
+      "JobEndTime": "10:00:00"
+    },
+    {
+      "EmployeeID": 4,
+      "JobID": 6,
+      "JobStartDate": "2020-03-02T00:00:00",
+      "JobEndDate": "2020-03-02T00:00:00",
+      "JobStartTime": "08:00:00",
+      "JobEndTime": "10:00:00"
+    },
+    {
+      "EmployeeID": 4,
+      "JobID": 7,
+      "JobStartDate": "2020-03-04T00:00:00",
+      "JobEndDate": "2020-03-04T00:00:00",
+      "JobStartTime": "08:00:00",
+      "JobEndTime": "10:00:00"
+    },
+    {
+      "EmployeeID": 2,
+      "JobID": 8,
+      "JobStartDate": "2020-03-05T00:00:00",
+      "JobEndDate": "2020-03-05T00:00:00",
+      "JobStartTime": "08:00:00",
+      "JobEndTime": "10:00:00"
+    },
+    {
+      "EmployeeID": 5,
+      "JobID": 8,
+      "JobStartDate": "2020-03-05T00:00:00",
+      "JobEndDate": "2020-03-05T00:00:00",
+      "JobStartTime": "08:00:00",
+      "JobEndTime": "10:00:00"
+    }
+  ],
+  "JobsForSolver": [
+    {
+      "Id": 6,
+      "JobHours": "02:00:00",
+      "DayOfWeek": "Monday",
+      "JobStartDate": "2020-03-02T00:00:00",
+      "JobTypeId": 2
+    },
+    {
+      "Id": 7,
+      "JobHours": "02:00:00",
+      "DayOfWeek": "Wednesday",
+      "JobStartDate": "2020-03-04T00:00:00",
+      "JobTypeId": 2
+    },
+    {
+      "Id": 8,
+      "JobHours": "02:00:00",
+      "DayOfWeek": "Thursday",
+      "JobStartDate": "2020-03-05T00:00:00",
+      "JobTypeId": 2
+    },
+    {
+      "Id": 9,
+      "JobHours": "02:00:00",
+      "DayOfWeek": "Friday",
+      "JobStartDate": "2020-03-06T00:00:00",
+      "JobTypeId": 2
+    }
+  ],
+  "..."
+},
+
+    "OutsideOfViewRange": "|",
+    "_" [ "List" ],
+    "ViewSchedules*": "|_",
+    "ScheduleCustomData" "|_",
+    [ "List" ],
+    "Assigments": "|_",
+    [ "List" ],
+    "EmployeeID's:" "|_",
+    [ "List" ],
+    "Job's"

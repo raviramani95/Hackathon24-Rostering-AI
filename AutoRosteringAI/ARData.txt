@@ -1,0 +1,187 @@
+{
+    "Employees": [
+        {
+            "Id": 1,
+            "JobTypeID": 1,
+			"FirstName":"Josh",
+			"LastName":"Smith"
+        },
+		 {
+            "Id": 2,
+            "JobTypeID": 1,
+			"FirstName":"Alex",
+			"LastName":"James"
+        },
+		{
+            "Id": 3,
+            "JobTypeID": 1,
+			"FirstName":"Alex",
+			"LastName":"Johnson"
+        },
+		{
+            "Id": 4,
+            "JobTypeID": 2,
+			"FirstName":"Aaron",
+			"LastName":"Johnson"
+        },
+		{
+            "Id": 5,
+            "JobTypeID": 3,
+			"FirstName":"Joe",
+			"LastName":"Smith"
+        },
+		{
+            "Id": 6,
+            "JobTypeID": 3,
+			"FirstName":"Ian",
+			"LastName":"Smith"
+        },
+		 {
+            "Id": 7,
+            "JobTypeID": 1,
+			"FirstName":"Ian",
+			"LastName":"Johnson"
+        },
+		{
+            "Id": 8,
+            "JobTypeID": 1,
+			"FirstName":"James",
+			"LastName":"Lehman"
+        },
+		 {
+            "Id": 9,
+            "JobTypeID": 1,
+			"FirstName":"Steven",
+			"LastName":"Smith"
+        },
+		{
+            "Id": 10,
+            "JobTypeID": 1,
+			"FirstName":"Joseph",
+			"LastName":"Smith"
+        }
+		
+    ],
+    "ScheduleJobs": [
+        {
+            "Id": 1,
+            "JobStartDateTime": "2024-04-22T12:00:00",
+            "JobEndDateTime": "2024-04-22T14:00:00",
+            "NoOfEmployeesRequired": 2,
+            "JobType":[
+			{
+			 "Id":1,
+			 "JobTypeName":"Supervisor"
+			}
+			]
+        },
+		{
+            "Id": 2,
+            "JobStartDateTime": "2024-04-23T12:00:00",
+            "JobEndDateTime": "2024-04-23T14:00:00",
+            "NoOfEmployeesRequired": 3,
+            "JobType":[
+			{
+			 "Id":1,
+			 "JobTypeName":"Supervisor"
+			}
+			]
+        },
+		{
+            "Id": 3,
+            "JobStartDateTime": "2024-04-24T14:00:00",
+            "JobEndDateTime": "2024-04-24T16:00:00",
+            "NoOfEmployeesRequired": 2,
+            "JobType":[
+			{
+			 "Id":1,
+			 "JobTypeName":"Supervisor"
+			}
+			]
+        },
+		 {
+            "Id": 4,
+            "JobStartDateTime": "2024-04-25T14:00:00",
+            "JobEndDateTime": "2024-04-25T16:00:00",
+            "NoOfEmployeesRequired": 5,
+            "JobType":[
+			{
+			 "Id":2,
+			 "JobTypeName":"Manager"
+			}
+			]
+        },
+		 {
+            "Id": 5,
+            "JobStartDateTime": "2024-04-26T14:00:00",
+            "JobEndDateTime": "2024-04-26T16:00:00",
+            "NoOfEmployeesRequired": 2,
+            "JobType":[
+			{
+			 "Id":3,
+			 "JobTypeName":"Assembly Worker"
+			}
+			]
+        },
+		{
+            "Id": 6,
+            "JobStartDateTime": "2024-04-29T16:00:00",
+            "JobEndDateTime": "2024-04-29T18:00:00",
+            "NoOfEmployeesRequired": 3,
+            "JobType":[
+			{
+			 "Id":3,
+			 "JobTypeName":"Assembly Worker"
+			}
+			]
+        },
+		{
+            "Id": 7,
+            "JobStartDateTime": "2024-04-30T16:00:00",
+            "JobEndDateTime": "2024-04-30T18:00:00",
+            "NoOfEmployeesRequired": 7,
+            "JobType":[
+			{
+			 "Id":1,
+			 "JobTypeName":"Supervisor"
+			}
+			]
+        },
+		{
+            "Id": 8,
+            "JobStartDateTime": "2024-05-01T12:00:00",
+		"JobEndDateTime": "2024-05-01T16:00:00",
+            "NoOfEmployeesRequired": 4,
+            "JobType":[
+			{
+			 "Id":1,
+			 "JobTypeName":"Supervisor"
+			}
+			]
+        },
+		 {
+            "Id": 9,
+            "JobStartDateTime": "2024-05-02T12:00:00",
+"JobEndDateTime": "2024-05-02T16:00:00",
+            "NoOfEmployeesRequired": 8,
+            "JobType":[
+			{
+			 "Id":1,
+			 "JobTypeName":"Supervisor"
+			}
+			]
+        },
+		{
+            "Id": 10,
+            "JobStartDateTime": "2024-05-03T12:00:00",
+"JobEndDateTime": "2024-05-03T16:00:00",
+            "NoOfEmployeesRequired": 6,
+            "JobType":[
+			{
+			 "Id":1,
+			 "JobTypeName":"Supervisor"
+			}
+			]
+        }
+    ]
+}

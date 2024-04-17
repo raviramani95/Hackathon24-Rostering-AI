@@ -1,0 +1,219 @@
+﻿{
+   "JobsAndAvailableEmployees":null,
+   "MaxNumOfJobsAtSameTime":1,
+   "MaxTime":300.0,
+   "NumberOfEmployees":1,
+   "NumberOfJobs":1,
+   "StartDayOfTheWeek":"Monday",
+   "Maximize":true,
+   "StopAtFirstNonMaximizeSolution":false,
+   "StopAtLastNonMaximizeSolution":false,
+   "FinalConsoleOutput":false,
+   "PrintSolutions":false,
+   "IgnoreAleardyAssignedEmployees":false,
+   "SetRestictedNumberOfEmployees":false,
+   "Employees":[
+      {
+         "Id":1,
+         "JobTypeID":null,
+         "StartDate":"2020-08-01T00:00:00",
+         "LeaveDate":null,
+         "DateOfBirth":null,
+         "TimeBandBaseDate":null,
+         "RosterBaseDate":null,
+         "EmployeeNumber":null,
+         "Firstname":"Zorica",
+         "Surname":"Babić",
+         "Address2":"",
+         "Address1":"",
+         "Address3":"",
+         "CostCode":null,
+         "Address4":"",
+         "TelephoneNumber":"",
+         "MobileNumber":"",
+         "TargetRuleGroup":null,
+         "Email":"zorica.b96@gmail.com",
+         "Username":"Zorica",
+         "EmployeeProfile":null,
+         "Gender":null,
+         "Location":null,
+         "Department":null,
+         "Division":null,
+         "JobTitle":null,
+         "Team":null,
+         "Class":null,
+         "TimeBandRule":null,
+         "Roster":null,
+         "Notification":"Push",
+         "Manager":null,
+         "JobType":null,
+         "PayRate":null,
+         "MaxHours1":null,
+         "MaxHours2":null,
+         "MaxHours3":null,
+         "MaxHours4":null,
+         "MaxHours5":null,
+         "AllowedTrades":false,
+         "Availability":false,
+         "NightWorker":false
+      }
+   ],
+   "EmployeeAssigments":[
+
+   ],
+   "JobsForSolver":[
+
+   ],
+   "ScheduleRankings":[
+
+   ],
+   "RankingRules":[
+
+   ],
+  "AllConstraintRules": [
+    {
+      "Id": 1,
+      "Name": "Not Already Assigned"
+    },
+    {
+      "Id": 2,
+      "Name": "Maximum Number Of Hours"
+    },
+    {
+      "Id": 3,
+      "Name": "Employee Leaver Status"
+    },
+    {
+      "Id": 4,
+      "Name": "Maximum Number Of Days Of The Week"
+    },
+    {
+      "Id": 5,
+      "Name": "Employee Must Not Work With Another Employee"
+    },
+    {
+      "Id": 6,
+      "Name": "Employee Must Work With Another Employee"
+    },
+    {
+      "Id": 7,
+      "Name": "Maximum Number Of Job Types"
+    },
+    {
+      "Id": 8,
+      "Name": "Maximum Number Of Job Types Consecutively"
+    },
+    {
+      "Id": 9,
+      "Name": "Employee Field Value"
+    },
+    {
+      "Id": 10,
+      "Name": "Split Shifts"
+    },
+    {
+      "Id": 11,
+      "Name": "Split Shifts"
+    }
+  ],
+   "RankingTypes":[
+      {
+         "Id":1,
+         "Name":"Scheduled Hours"
+      },
+      {
+         "Id":2,
+         "Name":"Default job"
+      },
+      {
+         "Id":3,
+         "Name":"Job Type Frequency"
+      },
+      {
+         "Id":4,
+         "Name":"Day of week frequency"
+      },
+      {
+         "Id":5,
+         "Name":"Employee field value"
+      }
+   ],
+   "Schedule":{
+      "ScheduleID":1,
+      "ScheduleStartDate":"2020-08-01T00:00:00",
+      "ScheduleEndDate":"2020-08-31T00:00:00",
+      "OnCallSlots":null,
+      "ScheduleActiveConstraints":[
+         {
+            "ConstraintRuleID":1,
+            "ScheduleID":1,
+            "ConstraintName":"Not Already Assigned",
+            "IsConstraintActive":true,
+            "Schedule":null,
+            "ConstraintRule":null,
+            "ConstraintEMWWAEs":null,
+            "ConstraintEMNWWAEs":null,
+            "ConstraintSetValues":null,
+            "ConstraintMNODOTW":null,
+            "ConstraintMNOH":null,
+            "ConstraintSS":null,
+            "Id":1
+         },
+         {
+            "ConstraintRuleID":10,
+            "ScheduleID":1,
+            "ConstraintName":"Split shifts constraint",
+            "IsConstraintActive":true,
+            "Schedule":null,
+            "ConstraintRule":null,
+            "ConstraintEMWWAEs":null,
+            "ConstraintEMNWWAEs":null,
+            "ConstraintSetValues":null,
+            "ConstraintMNODOTW":null,
+            "ConstraintMNOH":null,
+            "ConstraintSS":{
+               "MinimumRestPeriod":5.0,
+               "MaximumGap":2.3,
+               "IsPayPeriod":false,
+               "IsMonth":true,
+               "IsWeek":false,
+               "ConstraintID":3,
+               "CustomDataID":null,
+               "ConstraintSetValueID":null,
+               "ConstraintCustomDataID":null,
+               "ConstraintCustomRangeID":null,
+               "ConstraintBaseDateRangeID":null,
+               "CustomData":null,
+               "ConstraintSetValue":null,
+               "ConstraintCustomData":null,
+               "ConstraintCustomRange":null,
+               "ConstraintBaseDateRange":null,
+               "Id":1
+            },
+            "Id":3
+         }
+      ],
+      "ScheduleJobs":[
+         {
+            "JobID":1,
+            "JobStartDate":"2020-08-05T10:00:00",
+            "JobStartTime":"00:00:00",
+            "JobEndDate":"2020-08-05T15:00:00",
+            "JobEndTime":"00:00:00",
+            "Hours":"05:00:00",
+            "NoOfEmployeesRequired":2,
+            "SubgroupID":1,
+            "JobtypeID":2,
+            "JobStatusID":5,
+            "JobCustomData":[
+
+            ],
+            "Jobtype":null,
+            "UnavailableEmployeesForJob":[
+
+            ]
+         }
+      ]
+   },
+   "PayPeriodDTO":null
+}

@@ -1,0 +1,447 @@
+﻿{
+  "MaxNumOfJobsAtSameTime": 1,
+  "MaxTime": 300.0,
+  "StartDayOfTheWeek": "Monday",
+  "Maximize": true,
+  "FinalConsoleOutput": false,
+  "PrintSolutions": false,
+  "Employees": [
+    {
+      "Id": 1,
+      "JobTypeID": null,
+      "StartDate": "2016-01-01T00:00:00",
+      "LeaveDate": null,
+      "DateOfBirth": null,
+      "EmployeeNumber": "1",
+      "Firstname": "ana",
+      "Surname": "anic",
+      "Address2": null,
+      "Address1": null,
+      "Address3": null,
+      "CostCode": null,
+      "Address4": null,
+      "TelephoneNumber": null,
+      "MobileNumber": null,
+      "TargetRuleGroup": null,
+      "WorkRules": null,
+      "Email": "ana@ana",
+      "Username": "ana1",
+      "EmployeeProfile": "emp profile",
+      "Gender": null,
+      "Location": null,
+      "Department": null,
+      "Division": null,
+      "JobTitle": null,
+      "Team": null,
+      "Class": null,
+      "Notification": "Push",
+      "Manager": null,
+      "JobType": null,
+      "Locations": [ "Location 1", "Location 2" ],
+      "PayRate": null,
+      "MaxHours1": null,
+      "MaxHours2": null,
+      "MaxHours3": null,
+      "MaxHours4": null,
+      "MaxHours5": null,
+      "AllowedTrades": true,
+      "Availability": false
+    },
+    {
+      "Id": 2,
+      "JobTypeID": null,
+      "StartDate": "2016-01-01T00:00:00",
+      "LeaveDate": null,
+      "DateOfBirth": null,
+      "EmployeeNumber": "2",
+      "Firstname": "bojana",
+      "Surname": "bojanic",
+      "Address2": null,
+      "Address1": null,
+      "Address3": null,
+      "CostCode": null,
+      "Address4": null,
+      "TelephoneNumber": null,
+      "MobileNumber": null,
+      "TargetRuleGroup": null,
+      "WorkRules": null,
+      "Email": "bojana@bojana",
+      "Username": "bojana1",
+      "EmployeeProfile": "emp profile",
+      "Gender": null,
+      "Location": null,
+      "Department": null,
+      "Division": null,
+      "JobTitle": null,
+      "Team": null,
+      "Class": null,
+      "Notification": "Push",
+      "Manager": null,
+      "JobType": null,
+      "Locations": [ "Location 3", "Location 4" ],
+      "PayRate": null,
+      "MaxHours1": null,
+      "MaxHours2": null,
+      "MaxHours3": null,
+      "MaxHours4": null,
+      "MaxHours5": null,
+      "AllowedTrades": true,
+      "Availability": false
+    },
+    {
+      "Id": 5,
+      "JobTypeID": null,
+      "StartDate": "2016-01-01T00:00:00",
+      "LeaveDate": null,
+      "DateOfBirth": null,
+      "EmployeeNumber": "3",
+      "Firstname": "petar",
+      "Surname": "petrovic",
+      "Address2": null,
+      "Address1": null,
+      "Address3": null,
+      "CostCode": null,
+      "Address4": null,
+      "TelephoneNumber": null,
+      "MobileNumber": null,
+      "TargetRuleGroup": null,
+      "WorkRules": null,
+      "Email": "petar@petar",
+      "Username": "petar1",
+      "EmployeeProfile": "emp profile",
+      "Gender": null,
+      "Location": null,
+      "Department": null,
+      "Division": null,
+      "JobTitle": null,
+      "Team": null,
+      "Class": null,
+      "Notification": "Push",
+      "Manager": null,
+      "JobType": null,
+      "Locations": [ "Location 5", "Location 6" ],
+      "PayRate": null,
+      "MaxHours1": null,
+      "MaxHours2": null,
+      "MaxHours3": null,
+      "MaxHours4": null,
+      "MaxHours5": null,
+      "AllowedTrades": true,
+      "Availability": false
+    }
+  ],
+  "JobOutsides": [],
+  "ScheduleRankings": [],
+  "RankingRules": [],
+  "AllConstraintRules": [
+    {
+      "Id": 1,
+      "Name": "Not Already Assigned"
+    },
+    {
+      "Id": 2,
+      "Name": "Maximum Number Of Hours"
+    },
+    {
+      "Id": 4,
+      "Name": "Maximum Number Of Days Of The Week"
+    },
+    {
+      "Id": 5,
+      "Name": "Employee Must Not Work With Another Employee"
+    },
+    {
+      "Id": 6,
+      "Name": "Employee Must Work With Another Employee"
+    },
+    {
+      "Id": 7,
+      "Name": "Maximum Number Of Job Types"
+    },
+    {
+      "Id": 8,
+      "Name": "Maximum Number Of Job Types Consecutively"
+    },
+    {
+      "Id": 9,
+      "Name": "Employee Field Value"
+    },
+    {
+      "Id": 10,
+      "Name": "Split Shifts"
+    },
+    {
+      "Id": 11,
+      "Name": "Days Off Within A Period"
+    },
+    {
+      "Id": 12,
+      "Name": "Employee Planned Absence"
+    },
+    {
+      "Id": 13,
+      "Name": "Maximum Number Of Job Times"
+    }
+  ],
+  "RankingTypes": [
+    {
+      "Id": 1,
+      "Name": "Scheduled Hours"
+    },
+    {
+      "Id": 2,
+      "Name": "Default job"
+    },
+    {
+      "Id": 3,
+      "Name": "Job Type Frequency"
+    },
+    {
+      "Id": 4,
+      "Name": "Day of week frequency"
+    },
+    {
+      "Id": 5,
+      "Name": "Employee field value"
+    }
+  ],
+  "Schedule": {
+    "ScheduleID": 2,
+    "ScheduleActiveConstraints": [
+      {
+        "Id": 3,
+        "ConstraintName": "Not Already Assigned",
+        "IsConstraintActive": true,
+        "ComparisonValues": null,
+        "ConstraintRuleID": 1,
+        "ScheduleID": 2,
+        "Schedule": {
+          "Id": 2,
+          "Name": "schedule1",
+          "StartDate": "2022-06-01T00:00:00",
+          "EndDate": "2022-06-30T23:59:59",
+          "InsertedTemplates": null
+        },
+        "ConstraintRule": {
+          "Id": 1,
+          "Name": "Not Already Assigned"
+        },
+        "ConstraintEMWWAEs": null,
+        "ConstraintEMNWWAEs": null,
+        "ConstraintSetValues": null,
+        "ConstraintMNODOTW": null,
+        "ConstraintMNOH": null,
+        "ConstraintMNOJTC": null,
+        "ConstraintDOWP": null,
+        "ConstraintSS": null,
+        "ConstraintMNOJT": null,
+        "ConstraintMNOJTIME": null,
+        "BrokenRules": []
+      },
+      {
+        "Id": 17,
+        "ConstraintName": "dowap",
+        "IsConstraintActive": true,
+        "ComparisonValues": [ "Location 1", "Location 6" ],
+        "ConstraintRuleID": 11,
+        "ScheduleID": 2,
+        "Schedule": {
+          "Id": 2,
+          "Name": "schedule1",
+          "StartDate": "2022-06-01T00:00:00",
+          "EndDate": "2022-06-30T23:59:59",
+          "InsertedTemplates": null
+        },
+        "ConstraintRule": {
+          "Id": 11,
+          "Name": "Days Off Within A Period"
+        },
+        "ConstraintEMWWAEs": null,
+        "ConstraintEMNWWAEs": null,
+        "ConstraintSetValues": {
+          "ConstraintID": 17,
+          "Operator": "=",
+          "EmployeeField": "Location",
+          "ComparisonValue": "Location 1",
+          "Constraint": null,
+          "Id": 32
+        },
+        "ConstraintMNODOTW": null,
+        "ConstraintMNOH": null,
+        "ConstraintMNOJTC": null,
+        "ConstraintDOWP": {
+          "StartDay": "",
+          "NumberOfRestDays": 3,
+          "MustBeConsecutive": false,
+          "IsPayPeriod": false,
+          "IsMonth": false,
+          "IsWeek": true,
+          "ConstraintID": 17,
+          "CustomDataID": null,
+          "ConstraintSetValueID": 33,
+          "ConstraintCustomDataID": null,
+          "ConstraintCustomRangeID": null,
+          "ConstraintBaseDateRangeID": null,
+          "Constraint": {
+            "ConstraintRuleID": 11,
+            "ScheduleID": 2,
+            "ConstraintName": "dowap",
+            "IsConstraintActive": true,
+            "Schedule": null,
+            "ConstraintRule": null,
+            "ConstraintEMWWAEs": null,
+            "ConstraintEMNWWAEs": null,
+            "ConstraintSetValues": null,
+            "ConstraintMNODOTW": null,
+            "ConstraintMNOH": null,
+            "ConstraintMNOJTC": null,
+            "ConstraintSS": null,
+            "ConstraintMNOJT": null,
+            "ConstraintMNOJTIME": null,
+            "BrokenRules": null,
+            "Id": 17
+          },
+          "CustomData": null,
+          "ConstraintSetValue": {
+            "ConstraintID": 17,
+            "Operator": "=",
+            "EmployeeField": "Location",
+            "ComparisonValue": "Location 6",
+            "Constraint": null,
+            "Id": 33
+          },
+          "ConstraintCustomData": null,
+          "ConstraintCustomRange": null,
+          "ConstraintBaseDateRange": null,
+          "Id": 2
+        },
+        "ConstraintSS": null,
+        "ConstraintMNOJT": null,
+        "ConstraintMNOJTIME": null,
+        "BrokenRules": []
+      }
+    ],
+    "ScheduleJobs": [
+      {
+        "Id": 243,
+        "JobStartDateTime": "2022-06-06T12:00:00",
+        "JobEndDateTime": "2022-06-06T16:00:00",
+        "Hours": 144000000000,
+        "Hours1": 0,
+        "Hours2": 0,
+        "Hours3": 0,
+        "Hours4": 0,
+        "Hours5": 0,
+        "Hours6": 0,
+        "NoOfEmployeesRequired": 1,
+        "SubgroupID": 2,
+        "JobtypeID": 2,
+        "JobCustomData": [],
+        "UnavailableEmployeesForJob": []
+      },
+      {
+        "Id": 244,
+        "JobStartDateTime": "2022-06-07T12:00:00",
+        "JobEndDateTime": "2022-06-07T16:00:00",
+        "Hours": 144000000000,
+        "Hours1": 0,
+        "Hours2": 0,
+        "Hours3": 0,
+        "Hours4": 0,
+        "Hours5": 0,
+        "Hours6": 0,
+        "NoOfEmployeesRequired": 1,
+        "SubgroupID": 2,
+        "JobtypeID": 2,
+        "JobCustomData": [],
+        "UnavailableEmployeesForJob": []
+      },
+      {
+        "Id": 245,
+        "JobStartDateTime": "2022-06-08T12:00:00",
+        "JobEndDateTime": "2022-06-08T16:00:00",
+        "Hours": 144000000000,
+        "Hours1": 0,
+        "Hours2": 0,
+        "Hours3": 0,
+        "Hours4": 0,
+        "Hours5": 0,
+        "Hours6": 0,
+        "NoOfEmployeesRequired": 1,
+        "SubgroupID": 2,
+        "JobtypeID": 2,
+        "JobCustomData": [],
+        "UnavailableEmployeesForJob": []
+      },
+      {
+        "Id": 246,
+        "JobStartDateTime": "2022-06-09T12:00:00",
+        "JobEndDateTime": "2022-06-09T16:00:00",
+        "Hours": 144000000000,
+        "Hours1": 0,
+        "Hours2": 0,
+        "Hours3": 0,
+        "Hours4": 0,
+        "Hours5": 0,
+        "Hours6": 0,
+        "NoOfEmployeesRequired": 1,
+        "SubgroupID": 2,
+        "JobtypeID": 2,
+        "JobCustomData": [],
+        "UnavailableEmployeesForJob": []
+      },
+      {
+        "Id": 247,
+        "JobStartDateTime": "2022-06-10T12:00:00",
+        "JobEndDateTime": "2022-06-10T16:00:00",
+        "Hours": 144000000000,
+        "Hours1": 0,
+        "Hours2": 0,
+        "Hours3": 0,
+        "Hours4": 0,
+        "Hours5": 0,
+        "Hours6": 0,
+        "NoOfEmployeesRequired": 1,
+        "SubgroupID": 2,
+        "JobtypeID": 2,
+        "JobCustomData": [],
+        "UnavailableEmployeesForJob": []
+      },
+      {
+        "Id": 248,
+        "JobStartDateTime": "2022-06-11T12:00:00",
+        "JobEndDateTime": "2022-06-11T16:00:00",
+        "Hours": 144000000000,
+        "Hours1": 0,
+        "Hours2": 0,
+        "Hours3": 0,
+        "Hours4": 0,
+        "Hours5": 0,
+        "Hours6": 0,
+        "NoOfEmployeesRequired": 1,
+        "SubgroupID": 2,
+        "JobtypeID": 2,
+        "JobCustomData": [],
+        "UnavailableEmployeesForJob": []
+      },
+      {
+        "Id": 249,
+        "JobStartDateTime": "2022-06-12T12:00:00",
+        "JobEndDateTime": "2022-06-12T16:00:00",
+        "Hours": 144000000000,
+        "Hours1": 0,
+        "Hours2": 0,
+        "Hours3": 0,
+        "Hours4": 0,
+        "Hours5": 0,
+        "Hours6": 0,
+        "NoOfEmployeesRequired": 1,
+        "SubgroupID": 2,
+        "JobtypeID": 2,
+        "JobCustomData": [],
+        "UnavailableEmployeesForJob": []
+      }
+    ]
+  },
+  "PayPeriodDTO": null
+}
