@@ -58,33 +58,18 @@ export class ScheduleBuilderComponent implements OnInit, AfterViewInit {
   }
 
   clickAndDragCreateJob(event: any) {
-    console.log("Date clicked");
-    console.log(event.startStr);
+   //
   }
-
-  // onEventRender(currentEvent: any){
-  //   const eventDOM = currentEvent.el;
-
-  //   var tooltip = new Tooltip(currentEvent.el, {
-  //     title: currentEvent.event.extendedProps.description,
-  //     placement: 'top',
-  //     trigger: 'hover',
-  //     container: 'body'
-  //   });
-
-  //   this.renderer.listen(eventDOM, "click", event => {
-  //   console.log("event render clicked");
-  //   console.log(eventDOM);
-
-  //   })
-  // }
 
   selectedCar: any;
 
   customers = [
-      { id: 1, name: 'Logistics' },
-      { id: 2, name: 'Health & Care' },
-      { id: 3, name: 'Education' }
+      { id: 1, name: 'Manufacturing customer' },
+      { id: 2, name: 'Health & Care customer' },
+      { id: 3, name: 'Software services customer' },
+      { id: 2, name: 'Education customer' },
+      { id: 1, name: 'Legal customer' },
+      { id: 2, name: 'Financial services customer' }
   ];
 
   employees: any[] = [];
@@ -160,7 +145,7 @@ export class ScheduleBuilderComponent implements OnInit, AfterViewInit {
 
     postData(){
       this.autosolveService.postAutoSolve(1).subscribe((data: any) => {
-       console.log(data);
+       //
 
     },
     (err) => {
@@ -170,13 +155,11 @@ export class ScheduleBuilderComponent implements OnInit, AfterViewInit {
 
 
   onCustomerSelected(event: any) {
+    this.autoSolveClicked = false;
     this.startSpinner();
     setTimeout(() => {
-      console.log(event);
       this.selectedGroups = event.id;
       this.autosolveService.getEmployees(event.id).subscribe((data: any) => {
-        debugger
-        console.log(data);
         this.autoSolveClicked = false;
         this.employees = data.Employees;
         this.scheduleJobs = data.ScheduleJobs;
@@ -188,7 +171,7 @@ export class ScheduleBuilderComponent implements OnInit, AfterViewInit {
         this.scheduleJobs.forEach(job => {
           let temp = {
             id: job.Id,
-            title: job.JobType[0].JobTypeName + ' ' + job.JobEndDateTime,
+            title: job.JobType[0].JobTypeName +' ('+ job.NoOfEmployeesRequired +') ' + job.JobEndDateTime,
             date: job.JobStartDateTime
           }
           this.events.push(temp);
@@ -251,7 +234,6 @@ export class ScheduleBuilderComponent implements OnInit, AfterViewInit {
           // this.employees = data.Employees;
           this.autoSolveClicked = true;
           this.scheduleJobs = data.filledJob;
-          console.log(data);
           this.events = [];
           this.employeeIds = [];
           this.calendarOptions.events = this.events;
@@ -266,11 +248,10 @@ export class ScheduleBuilderComponent implements OnInit, AfterViewInit {
             }
             this.events.push(temp);
             
-            debugger
+            
             job.employeesID.forEach((emp: any) => {
                 this.employeeIds.push(emp);
             });
-            // console.log(this.employeeIds);
           });
           this.calendarOptions.events = this.events;
           this.fullCalendar.getApi().render();
@@ -284,9 +265,7 @@ export class ScheduleBuilderComponent implements OnInit, AfterViewInit {
     findEmployee(id: any){
       if(!this.autoSolveClicked)
         return false;
-      console.log(id);
       
-      debugger
       if(this.employeeIds.find(x => x == id))
         return true;
       else 

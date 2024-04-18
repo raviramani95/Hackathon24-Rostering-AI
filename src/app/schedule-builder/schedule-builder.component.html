@@ -37,7 +37,7 @@
                 <div class="card-body">
                   <h3 class="card-title">People</h3>
                   <div class="h-100" style="margin-bottom: 25px;">
-                    <ng-select [items]="customers" bindLabel="name" bindValue="id" (change)="onCustomerSelected($event)" placeholder="Select the group">
+                    <ng-select [items]="customers" bindLabel="name" bindValue="id" (change)="onCustomerSelected($event)" placeholder="Select the customer">
                         <ng-option *ngFor="let car of customers" [value]="car.id">{{car.name}}</ng-option>
                      </ng-select>
                     </div>
