@@ -81,8 +81,8 @@
   "ScheduleJobs": [
     {
       "Id": 1,
-      "JobStartDateTime": "2024-04-22T12:00:00",
-      "JobEndDateTime": "2024-04-22T14:00:00",
+      "JobStartDateTime": "2024-04-22",
+      "JobEndDateTime": "12:00-14:00",
       "NoOfEmployeesRequired": 1,
       "JobType": [
         {
@@ -93,8 +93,8 @@
     },
     {
       "Id": 2,
-      "JobStartDateTime": "2024-04-22T12:00:00",
-      "JobEndDateTime": "2024-04-22T14:00:00",
+      "JobStartDateTime": "2024-04-22",
+      "JobEndDateTime": "12:00-14:00",
       "NoOfEmployeesRequired": 1,
       "JobType": [
         {
@@ -105,8 +105,8 @@
     },
     {
       "Id": 3,
-      "JobStartDateTime": "2024-04-23T14:00:00",
-      "JobEndDateTime": "2024-04-23T16:00:00",
+      "JobStartDateTime": "2024-04-23",
+      "JobEndDateTime": "14:00-16:00",
       "NoOfEmployeesRequired": 2,
       "JobType": [
         {
@@ -117,8 +117,8 @@
     },
     {
       "Id": 4,
-      "JobStartDateTime": "2024-04-23:00:00",
-      "JobEndDateTime": "2024-04-23T16:00:00",
+      "JobStartDateTime": "2024-04-23",
+      "JobEndDateTime": "14:00-16:00",
       "NoOfEmployeesRequired": 2,
       "JobType": [
         {
@@ -129,8 +129,8 @@
     },
     {
       "Id": 5,
-      "JobStartDateTime": "2024-04-23T14:00:00",
-      "JobEndDateTime": "2024-04-23T16:00:00",
+      "JobStartDateTime": "2024-04-23",
+      "JobEndDateTime": "14:00-16:00",
       "NoOfEmployeesRequired": 1,
       "JobType": [
         {
