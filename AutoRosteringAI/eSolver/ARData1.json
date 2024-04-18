@@ -49,7 +49,7 @@
       "JobType": [
         {
           "Id": 3,
-          "JobTypeName": "Assembly Worker"
+          "JobTypeName": "Worker"
         }
       ],
       "FirstName": "Joe",
@@ -60,7 +60,7 @@
       "JobType": [
         {
           "Id": 3,
-          "JobTypeName": "Assembly Worker"
+          "JobTypeName": "Worker"
         }
       ],
       "FirstName": "Ian",
