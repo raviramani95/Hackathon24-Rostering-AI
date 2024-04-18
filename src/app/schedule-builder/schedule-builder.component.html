@@ -37,13 +37,13 @@
                 <div class="card-body">
                   <h3 class="card-title">People</h3>
                   <div class="h-100" style="margin-bottom: 25px;">
-                    <ng-select [items]="customers" bindLabel="name" bindValue="id" (change)="onCustomerSelected($event)">
+                    <ng-select [items]="customers" bindLabel="name" bindValue="id" (change)="onCustomerSelected($event)" placeholder="Select the group">
                         <ng-option *ngFor="let car of customers" [value]="car.id">{{car.name}}</ng-option>
                      </ng-select>
                     </div>
                     <div class="h-100">
                         <div *ngFor="let employee of employees" 
-                            class="employee-card">
+                            class="employee-card" [ngClass]="{'selected-employee-card': findEmployee(employee.Id) }">
                             <!-- User image -->
                             <div class="user-image">
                                 <!-- Placeholder image or real user image source -->
@@ -70,5 +70,5 @@
     size = "large" color = "#ffffff" 
     type = "ball-scale-ripple-multiple" 
     [fullScreen] = "true" >
-    <p style="color: white" > Fetching Work... </p>
+    <p style="color: white" > {{autoSolveClicked ? 'Rostering...' : 'Fetching work...'}} </p>
 </ngx-spinner>

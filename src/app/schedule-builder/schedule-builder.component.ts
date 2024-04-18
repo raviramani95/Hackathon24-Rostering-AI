@@ -82,13 +82,14 @@ export class ScheduleBuilderComponent implements OnInit, AfterViewInit {
   selectedCar: any;
 
   customers = [
-      { id: 1, name: 'Customer A' },
-      { id: 2, name: 'Customer B' },
-      { id: 3, name: 'Customer C' }
+      { id: 1, name: 'Logistics' },
+      { id: 2, name: 'Health & Care' },
+      { id: 3, name: 'Education' }
   ];
 
   employees: any[] = [];
   scheduleJobs: any[] = [];
+  autoSolveClicked = false;
 
   // employees: any = [
   //   {
@@ -175,9 +176,12 @@ export class ScheduleBuilderComponent implements OnInit, AfterViewInit {
       this.selectedGroups = event.id;
       this.autosolveService.getEmployees(event.id).subscribe((data: any) => {
         debugger
+        console.log(data);
+        this.autoSolveClicked = false;
         this.employees = data.Employees;
         this.scheduleJobs = data.ScheduleJobs;
         this.events = [];
+        this.employeeIds = [];
         this.calendarOptions.events = this.events;
         this.fullCalendar.getApi().render();
 
@@ -188,12 +192,16 @@ export class ScheduleBuilderComponent implements OnInit, AfterViewInit {
             date: job.JobStartDateTime
           }
           this.events.push(temp);
+
         });
+
+        
+        
         this.calendarOptions.events = this.events;
         this.fullCalendar.getApi().render();
         this.spinner.hide();
       });
-    }, 800);
+    }, 3000);
   }
 
     showSpinner() {
@@ -233,15 +241,19 @@ export class ScheduleBuilderComponent implements OnInit, AfterViewInit {
       return { domNodes: [container] }; // Return container div as the event content
     }
 
+    employeeIds: any[] = [];
+
     autoSolve(){
+      this.autoSolveClicked = true;
       this.startSpinner();
       setTimeout(() => {
         this.autosolveService.postAutoSolve(this.selectedGroups).subscribe((data: any) => {
           // this.employees = data.Employees;
+          this.autoSolveClicked = true;
           this.scheduleJobs = data.filledJob;
-          debugger
           console.log(data);
           this.events = [];
+          this.employeeIds = [];
           this.calendarOptions.events = this.events;
           this.fullCalendar.getApi().render();
           this.scheduleJobs.forEach(job => {
@@ -249,16 +261,35 @@ export class ScheduleBuilderComponent implements OnInit, AfterViewInit {
               id: job.jobID,
               title: job.jobTypeName + ' ' + job.jobEndDateTime,
               date: job.jobStartDateTime,
-              color: 'green',
+              color: job.color,
               employees: job.assignedEmployees
             }
             this.events.push(temp);
+            
+            debugger
+            job.employeesID.forEach((emp: any) => {
+                this.employeeIds.push(emp);
+            });
+            // console.log(this.employeeIds);
           });
           this.calendarOptions.events = this.events;
           this.fullCalendar.getApi().render();
 
           this.spinner.hide();
+          
         })
-      }, 2000);
+      }, 5000);
+    }
+
+    findEmployee(id: any){
+      if(!this.autoSolveClicked)
+        return false;
+      console.log(id);
+      
+      debugger
+      if(this.employeeIds.find(x => x == id))
+        return true;
+      else 
+        return false;
     }
 }

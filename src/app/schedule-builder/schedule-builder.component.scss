@@ -72,8 +72,8 @@ html, body {
     cursor: pointer; /* Add cursor pointer */
 }
 
-.employee-card.selected {
-    background-color: #d9e5ff; /* Change background color for selected employees */
+.selected-employee-card {
+    background-color: #C1F2B0; /* Change background color for selected employees */
 }
 
 .user-image {
@@ -123,7 +123,7 @@ html, body {
 }
 
 .card-title {
-  margin-bottom: 0;
+  margin-bottom: 18px;
   margin-top: 8px;
 }
 
@@ -154,4 +154,8 @@ html, body {
 
 .employees-box .employee {
   margin-bottom: 1px; /* Add margin between employees */
+}
+
+::ng-deep .fc .fc-scrollgrid-section-body table {
+  height:900px !important ;
 }

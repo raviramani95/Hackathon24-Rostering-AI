@@ -138,6 +138,18 @@
           "JobTypeName": "Helper"
         }
       ]
+    },
+    {
+      "Id": 6,
+      "JobStartDateTime": "2024-04-24",
+      "JobEndDateTime": "14:00-16:00",
+      "NoOfEmployeesRequired": 2,
+      "JobType": [
+        {
+          "Id": 3,
+          "JobTypeName": "Helper"
+        }
+      ]
     }
   ]
 }

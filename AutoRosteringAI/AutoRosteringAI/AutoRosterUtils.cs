@@ -46,11 +46,12 @@ namespace AutoRosteringAI
                     i.JobStartDateTime= arEmployeeData.ScheduleJobs.FirstOrDefault(x => x.Id == i.JobID).JobStartDateTime;
                     i.JobEndDateTime = arEmployeeData.ScheduleJobs.FirstOrDefault(x => x.Id == i.JobID).JobEndDateTime;
                     if (employeesRequired == i.EmployeesID.Count)
-                        i.Color = "green";
-                    else if (employeesRequired > i.EmployeesID.Count)
-                        i.Color = "orange";
+                      i.Color = "green";
                     else if (i.EmployeesID.Count == 0)
-                        i.Color = "red";
+                      i.Color = "red";
+                    else if (employeesRequired > i.EmployeesID.Count)
+                      i.Color = "orange";
+                    
                     List<string> assingedEmployeesName = new List<string>();
                     foreach (var employee in i.EmployeesID)
                     {
