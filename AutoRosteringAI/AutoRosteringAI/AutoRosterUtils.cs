@@ -1,4 +1,4 @@
-﻿using eSolver;
+using eSolver;
 using eSolver.Entities;
 using eSolver.Entities.Responses;
 using Newtonsoft.Json;
@@ -46,17 +46,17 @@ namespace AutoRosteringAI
                     i.JobStartDateTime= arEmployeeData.ScheduleJobs.FirstOrDefault(x => x.Id == i.JobID).JobStartDateTime;
                     i.JobEndDateTime = arEmployeeData.ScheduleJobs.FirstOrDefault(x => x.Id == i.JobID).JobEndDateTime;
                     if (employeesRequired == i.EmployeesID.Count)
-                        i.Color = "Green";
+                        i.Color = "green";
                     else if (employeesRequired > i.EmployeesID.Count)
-                        i.Color = "Yellow";
+                        i.Color = "orange";
                     else if (i.EmployeesID.Count == 0)
-                        i.Color = "Red";
+                        i.Color = "red";
                     List<string> assingedEmployeesName = new List<string>();
                     foreach (var employee in i.EmployeesID)
                     {
                         
-                        string firstname = jsonData.Employees.FirstOrDefault(x => x.Id == employee).Firstname;
-                        string lastname = jsonData.Employees.FirstOrDefault(x => x.Id == employee).Surname;
+                        string firstname = arEmployeeData.Employees.FirstOrDefault(x => x.Id == employee).FirstName;
+                        string lastname = arEmployeeData.Employees.FirstOrDefault(x => x.Id == employee).LastName;
                         assingedEmployeesName.Add(firstname + " " + lastname);
                     }
                     i.AssignedEmployees = assingedEmployeesName;

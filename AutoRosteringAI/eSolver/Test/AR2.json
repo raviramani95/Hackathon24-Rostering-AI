@@ -565,64 +565,130 @@
                 "BrokenRules": []
             }
         ],
-        "ScheduleJobs": [
-            {
-                "Id": 5,
-                "JobStartDateTime": "2024-04-26T14:00:00",
-                "JobEndDateTime": "2024-04-26T16:00:00",
-                "Hours": 0,
-                "Hours1": 0,
-                "Hours2": 0,
-                "Hours3": 0,
-                "Hours4": 0,
-                "Hours5": 0,
-                "Hours6": 0,
-                "NoOfEmployeesRequired": 2,
-                "SubgroupID": 0,
-                "JobtypeID": 3,
-                "JobCustomData": [],
-                "UnavailableEmployeesForJob": [
-                    1,
-                    2,
-                    3,
-                    4,
-                    7,
-                    8,
-                    9,
-                    10
-                ],
-                "AlreadyAssignedEmployeeOnJob": [],
-                "isTemplateJob": false
-            },
-            {
-                "Id": 6,
-                "JobStartDateTime": "2024-04-29T16:00:00",
-                "JobEndDateTime": "2024-04-29T18:00:00",
-                "Hours": 0,
-                "Hours1": 0,
-                "Hours2": 0,
-                "Hours3": 0,
-                "Hours4": 0,
-                "Hours5": 0,
-                "Hours6": 0,
-                "NoOfEmployeesRequired": 3,
-                "SubgroupID": 0,
-                "JobtypeID": 3,
-                "JobCustomData": [],
-                "UnavailableEmployeesForJob": [
-                    1,
-                    2,
-                    3,
-                    4,
-                    7,
-                    8,
-                    9,
-                    10
-                ],
-                "AlreadyAssignedEmployeeOnJob": [],
-                "isTemplateJob": false
-            }            
-        ]
+      "ScheduleJobs": [
+        {
+          "Id": 1,
+          "JobStartDateTime": "2024-04-22T12:00:00",
+          "JobEndDateTime": "2024-04-22T14:00:00",
+          "Hours": 0,
+          "Hours1": 0,
+          "Hours2": 0,
+          "Hours3": 0,
+          "Hours4": 0,
+          "Hours5": 0,
+          "Hours6": 0,
+          "NoOfEmployeesRequired": 2,
+          "SubgroupID": 0,
+          "JobtypeID": 1,
+          "JobCustomData": [],
+          "UnavailableEmployeesForJob": [
+            3,
+            4,
+            5,
+            7            
+          ],
+          "AlreadyAssignedEmployeeOnJob": [],
+          "isTemplateJob": false
+        },
+        {
+          "Id": 2,
+          "JobStartDateTime": "2024-04-22T12:00:00",
+          "JobEndDateTime": "2024-04-22T14:00:00",
+          "Hours": 0,
+          "Hours1": 0,
+          "Hours2": 0,
+          "Hours3": 0,
+          "Hours4": 0,
+          "Hours5": 0,
+          "Hours6": 0,
+          "NoOfEmployeesRequired": 3,
+          "SubgroupID": 0,
+          "JobtypeID": 2,
+          "JobCustomData": [],
+          "UnavailableEmployeesForJob": [
+            1,
+            2,
+            4,
+            6
+          ],
+          "AlreadyAssignedEmployeeOnJob": [],
+          "isTemplateJob": false
+        },
+        {
+          "Id": 3,
+          "JobStartDateTime": "2024-04-23T14:00:00",
+          "JobEndDateTime": "2024-04-23T16:00:00",
+          "Hours": 0,
+          "Hours1": 0,
+          "Hours2": 0,
+          "Hours3": 0,
+          "Hours4": 0,
+          "Hours5": 0,
+          "Hours6": 0,
+          "NoOfEmployeesRequired": 2,
+          "SubgroupID": 0,
+          "JobtypeID": 1,
+          "JobCustomData": [],
+          "UnavailableEmployeesForJob": [
+            3,
+            4,
+            5,
+            7
+          ],
+          "AlreadyAssignedEmployeeOnJob": [],
+          "isTemplateJob": false
+        },
+        {
+          "Id": 4,
+          "JobStartDateTime": "2024-04-23T14:00:00",
+          "JobEndDateTime": "2024-04-23T16:00:00",
+          "Hours": 0,
+          "Hours1": 0,
+          "Hours2": 0,
+          "Hours3": 0,
+          "Hours4": 0,
+          "Hours5": 0,
+          "Hours6": 0,
+          "NoOfEmployeesRequired": 3,
+          "SubgroupID": 0,
+          "JobtypeID": 2,
+          "JobCustomData": [],
+          "UnavailableEmployeesForJob": [
+            1,
+            2,
+            4,
+            6
+          ],
+          "AlreadyAssignedEmployeeOnJob": [],
+          "isTemplateJob": false
+        },
+        {
+          "Id": 5,
+          "JobStartDateTime": "2024-04-23T14:00:00",
+          "JobEndDateTime": "2024-04-23T16:00:00",
+          "Hours": 0,
+          "Hours1": 0,
+          "Hours2": 0,
+          "Hours3": 0,
+          "Hours4": 0,
+          "Hours5": 0,
+          "Hours6": 0,
+          "NoOfEmployeesRequired": 2,
+          "SubgroupID": 0,
+          "JobtypeID": 3,
+          "JobCustomData": [],
+          "UnavailableEmployeesForJob": [
+            1,
+            2,
+            3,
+            5,
+            6,
+            7
+          ],
+          "AlreadyAssignedEmployeeOnJob": [],
+          "isTemplateJob": false
+        },        
+      ]
     },
     "PayPeriodDTO": {
         "PayPeriodStartDate": "",
