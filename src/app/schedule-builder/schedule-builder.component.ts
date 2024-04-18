@@ -71,7 +71,7 @@ export class ScheduleBuilderComponent implements OnInit, AfterViewInit {
     })
   }
 
-  selectedCar: number = 0;
+  selectedCar: any = "Volvo";
 
   cars = [
       { id: 1, name: 'Volvo' },
@@ -79,4 +79,68 @@ export class ScheduleBuilderComponent implements OnInit, AfterViewInit {
       { id: 3, name: 'Opel' },
       { id: 4, name: 'Audi' },
   ];
+
+  employees: any = [
+    {
+      "Id": 1,
+      "JobTypeID": 1,
+      "FirstName": "Josh",
+      "LastName": "Smith"
+    },
+    {
+      "Id": 2,
+      "JobTypeID": 1,
+      "FirstName": "Alex",
+      "LastName": "James"
+    },
+    {
+      "Id": 3,
+      "JobTypeID": 1,
+      "FirstName": "Alex",
+      "LastName": "Johnson"
+    },
+    {
+      "Id": 4,
+      "JobTypeID": 2,
+      "FirstName": "Aaron",
+      "LastName": "Johnson"
+    },
+    {
+      "Id": 5,
+      "JobTypeID": 3,
+      "FirstName": "Joe",
+      "LastName": "Smith"
+    },
+    {
+      "Id": 6,
+      "JobTypeID": 3,
+      "FirstName": "Ian",
+      "LastName": "Smith"
+    },
+    {
+      "Id": 7,
+      "JobTypeID": 1,
+      "FirstName": "Ian",
+      "LastName": "Johnson"
+    },
+    {
+      "Id": 8,
+      "JobTypeID": 1,
+      "FirstName": "James",
+      "LastName": "Lehman"
+    },
+    {
+      "Id": 9,
+      "JobTypeID": 1,
+      "FirstName": "Steven",
+      "LastName": "Smith"
+    },
+    {
+      "Id": 10,
+      "JobTypeID": 1,
+      "FirstName": "Joseph",
+      "LastName": "Smith"
+    }
+
+  ]
 }

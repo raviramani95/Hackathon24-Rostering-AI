@@ -6,7 +6,7 @@ $topnav-background-color: #161616;
     z-index: 990;
     top: 0;
     left: 310px;
-    width: 60px;
+    width: 72px;
     margin-left: -310px;
     border: none;
     border-radius: 0;
@@ -132,6 +132,10 @@ $topnav-background-color: #161616;
             }
         }
     }
+}
+
+.list-group-item.active {
+    background-color: #f0f0f0; /* Highlight color for active item */
 }
 
 .nested-menu {

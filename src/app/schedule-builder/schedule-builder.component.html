@@ -36,10 +36,26 @@
             <div class="card">
                 <div class="card-body">
                   <h3 class="card-title">People</h3>
-                  <div class="h-100">
+                  <div class="h-100" style="margin-bottom: 25px;">
                     <ng-select [(ngModel)]="selectedCar">
                         <ng-option *ngFor="let car of cars" [value]="car.id">{{car.name}}</ng-option>
                      </ng-select>
+                    </div>
+                    <div class="h-100">
+                        <div *ngFor="let employee of employees" class="employee-card">
+                            <!-- User image -->
+                            <div class="user-image">
+                                <!-- Placeholder image or real user image source -->
+                                <img src="../../assets/default-avatar-20.jpg" alt="User Image">
+                            </div>
+                            <!-- Employee details -->
+                            <div class="employee-details">
+                                <!-- Name -->
+                                <div class="name">{{ employee.FirstName }} {{ employee.LastName }}</div>
+                                <!-- Static value -->
+                                <div class="static-value">Doctor</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
               </div>
