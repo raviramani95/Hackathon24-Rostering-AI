@@ -7,13 +7,25 @@ import { Observable, Observer } from 'rxjs';
 })
 export class AppServicesService {
 
-  apiUrl = 'https://localhost:44337/AutoRoster/autosolve?groupId=1';
+  apiUrl = 'https://localhost:44337/AutoRoster/';
 
   constructor(private http: HttpClient) { }
 
-  postAutoSolve(): Observable<any[]> {
+  postAutoSolve(id: any): Observable<any[]> {
     return new Observable((o: Observer<any>) => {
-      this.http.get<any>(this.apiUrl).subscribe((data: any) => {
+      this.http.get<any>(this.apiUrl + 'autosolve?groupId=' + id).subscribe((data: any) => {
+        o.next(data)
+        return o.complete();
+      },
+        (err: any) => {
+          return o.error(err);
+        });
+    });
+  }
+
+  getEmployees(id: any): Observable<any[]> {
+    return new Observable((o: Observer<any>) => {
+      this.http.get<any>(this.apiUrl + 'employees?groupId=' + id).subscribe((data: any) => {
         o.next(data)
         return o.complete();
       },
