@@ -2,10 +2,10 @@
     <div class="row schedule-builder-row">
         <div class="card">
             <div class="row d-flex card-body justify-content-between schedule-card">
-                <div class="col">
-                    <h3 class="card-title">Schedule Builder</h3>
+                <div class="col-9">
+                    <h3 class="card-title card-title2">Schedule Builder</h3>
                 </div>
-                <div class="col">
+                <div class="col-3">
                     
                     <button type="button" style="width: 300px; height: 50px; font-size: 23px;" class="btn btn-primary float-end">
                         <i class="fa fa-magic" aria-hidden="true"></i>
@@ -22,7 +22,7 @@
         <div class="col-8 calender-col">
             <div class="card">
                 <div class="card-body">
-                  <h3 class="card-title">Calender</h3>
+                  <h3 class="card-title">Calendar</h3>
                   <div class="h-100">
                     <full-calendar #calendar id="calendar"
                         [options]="calendarOptions"
@@ -37,12 +37,15 @@
                 <div class="card-body">
                   <h3 class="card-title">People</h3>
                   <div class="h-100" style="margin-bottom: 25px;">
-                    <ng-select [(ngModel)]="selectedCar">
-                        <ng-option *ngFor="let car of cars" [value]="car.id">{{car.name}}</ng-option>
+                    <ng-select [items]="customers" bindLabel="name" bindValue="id" (change)="onCustomerSelected($event)">
+                        <ng-option *ngFor="let car of customers" [value]="car.id">{{car.name}}</ng-option>
                      </ng-select>
                     </div>
                     <div class="h-100">
-                        <div *ngFor="let employee of employees" class="employee-card">
+                        <div *ngFor="let employee of employees" 
+                            class="employee-card" 
+                            [class.selected]="isSelected(employee)"
+                            (click)="toggleSelection(employee)">
                             <!-- User image -->
                             <div class="user-image">
                                 <!-- Placeholder image or real user image source -->
@@ -53,12 +56,21 @@
                                 <!-- Name -->
                                 <div class="name">{{ employee.FirstName }} {{ employee.LastName }}</div>
                                 <!-- Static value -->
-                                <div class="static-value">Doctor</div>
+                                <div class="static-value">{{employee.JobType[0].JobTypeName}}</div>
                             </div>
                         </div>
+
                     </div>
                 </div>
               </div>
         </div>
     </div>
 </div>
+
+<ngx-spinner 
+    bdColor = "rgba(0, 0, 0, 0.8)" 
+    size = "large" color = "#ffffff" 
+    type = "ball-scale-ripple-multiple" 
+    [fullScreen] = "true" >
+    <p style="color: white" > Fetching Work... </p>
+</ngx-spinner>

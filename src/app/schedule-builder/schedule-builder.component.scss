@@ -8,6 +8,8 @@ html, body {
  #calendar {
     max-width: 100%;
     margin-top: 20px;
+    // color: black;
+    // text-decoration: none;
   }
 
   .row {
@@ -53,8 +55,9 @@ html, body {
   }
 
 
-
-
+.events {
+  width: 300px !important;
+}
 
   .employee-card {
     display: flex;
@@ -66,6 +69,11 @@ html, body {
     margin-left: 10px; /* Add margin to the left */
     padding: 10px; /* Add padding */
     margin: 10px 0px;
+    cursor: pointer; /* Add cursor pointer */
+}
+
+.employee-card.selected {
+    background-color: #d9e5ff; /* Change background color for selected employees */
 }
 
 .user-image {
@@ -91,4 +99,59 @@ html, body {
 
 .static-value {
     /* Add styles for the static value */
+}
+
+::ng-deep .fc .fc-col-header-cell-cushion{
+  color: black;
+  text-decoration: none;
+}
+
+::ng-deep .fc .fc-daygrid-day-number {
+  color: black;
+  text-decoration: none;
+}
+
+::ng-deep .fc .fc-daygrid-day-frame {
+  max-height: 1px;
+}
+
+::ng-deep  .fc-h-event .fc-event-title-container {
+  height: 40px;
+  align-content: center;
+  text-align: center;
+  font-size: 15px;
+}
+
+.card-title {
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-title2 {
+  font-weight: 650;
+}
+
+::ng-deep .fc-daygrid-block-event .fc-event-title  {
+  padding: 1px;
+  text-wrap: pretty !important;
+}
+
+.event-container {
+  //border: 1px solid #90D26D; /* Add border */
+  padding: 10px; /* Add padding */
+}
+
+.event-container .title {
+  font-weight: bold; /* Make title bold */
+}
+
+.employees-box {
+  border: 1px solid #008000;
+  border-radius: 5px;
+  background-color: #039603; /* Add background color */
+  padding: 5px; /* Add padding */
+}
+
+.employees-box .employee {
+  margin-bottom: 1px; /* Add margin between employees */
 }
