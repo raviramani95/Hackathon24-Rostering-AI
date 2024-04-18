@@ -1,0 +1,143 @@
+{
+  "Employees": [
+    {
+      "Id": 1,
+      "JobType": [
+        {
+          "Id": 1,
+          "JobTypeName": "Doctor"
+        }
+      ],
+      "FirstName": "Aaron",
+      "LastName": "Smith"
+    },
+    {
+      "Id": 2,
+      "JobType": [
+        {
+          "Id": 1,
+          "JobTypeName": "Doctor"
+        }
+      ],
+      "FirstName": "Steve",
+      "LastName": "James"
+    },
+    {
+      "Id": 3,
+      "JobType": [
+        {
+          "Id": 2,
+          "JobTypeName": "Nurse"
+        }
+      ],
+      "FirstName": "Lin",
+      "LastName": "Johnson"
+    },
+    {
+      "Id": 4,
+      "JobType": [
+        {
+          "Id": 3,
+          "JobTypeName": "Helper"
+        }
+      ],
+      "FirstName": "Will",
+      "LastName": "Johnson"
+    },
+    {
+      "Id": 5,
+      "JobType": [
+        {
+          "Id": 2,
+          "JobTypeName": "Nurse"
+        }
+      ],
+      "FirstName": "Joe",
+      "LastName": "Walker"
+    },
+    {
+      "Id": 6,
+      "JobType": [
+        {
+          "Id": 1,
+          "JobTypeName": "Doctor"
+        }
+      ],
+      "FirstName": "Ian",
+      "LastName": "Cummins"
+    },
+    {
+      "Id": 7,
+      "JobType": [
+        {
+          "Id": 2,
+          "JobTypeName": "Nurse"
+        }
+      ],
+      "FirstName": "Ciara",
+      "LastName": "Walter"
+    }
+  ],
+  "ScheduleJobs": [
+    {
+      "Id": 1,
+      "JobStartDateTime": "2024-04-22T12:00:00",
+      "JobEndDateTime": "2024-04-22T14:00:00",
+      "NoOfEmployeesRequired": 1,
+      "JobType": [
+        {
+          "Id": 1,
+          "JobTypeName": "Doctor"
+        }
+      ]
+    },
+    {
+      "Id": 2,
+      "JobStartDateTime": "2024-04-22T12:00:00",
+      "JobEndDateTime": "2024-04-22T14:00:00",
+      "NoOfEmployeesRequired": 1,
+      "JobType": [
+        {
+          "Id": 2,
+          "JobTypeName": "Nurse"
+        }
+      ]
+    },
+    {
+      "Id": 3,
+      "JobStartDateTime": "2024-04-23T14:00:00",
+      "JobEndDateTime": "2024-04-23T16:00:00",
+      "NoOfEmployeesRequired": 2,
+      "JobType": [
+        {
+          "Id": 1,
+          "JobTypeName": "Doctor"
+        }
+      ]
+    },
+    {
+      "Id": 4,
+      "JobStartDateTime": "2024-04-23:00:00",
+      "JobEndDateTime": "2024-04-23T16:00:00",
+      "NoOfEmployeesRequired": 2,
+      "JobType": [
+        {
+          "Id": 2,
+          "JobTypeName": "Nurse"
+        }
+      ]
+    },
+    {
+      "Id": 5,
+      "JobStartDateTime": "2024-04-23T14:00:00",
+      "JobEndDateTime": "2024-04-23T16:00:00",
+      "NoOfEmployeesRequired": 1,
+      "JobType": [
+        {
+          "Id": 3,
+          "JobTypeName": "Helper"
+        }
+      ]
+    }
+  ]
+}

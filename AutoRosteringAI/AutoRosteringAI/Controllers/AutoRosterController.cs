@@ -20,5 +20,10 @@ namespace AutoRosteringAI.Controllers
             t.Wait();
             return Ok(t.Result);
         }
+        [HttpGet("employees")]
+        public ActionResult GetData(int groupId)
+        {
+            return Ok(AutoRosterUtils.GetData(groupId));
+        }       
     }
 }

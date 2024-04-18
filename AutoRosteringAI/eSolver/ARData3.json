@@ -1,0 +1,109 @@
+{
+  "Employees": [
+    {
+      "Id": 1,
+      "JobType": [
+        {
+          "Id": 1,
+          "JobTypeName": "Front end developer"
+        }
+      ],
+      "FirstName": "Alex",
+      "LastName": "Smith"
+    },
+    {
+      "Id": 2,
+      "JobType": [
+        {
+          "Id": 1,
+          "JobTypeName": "Front end developer"
+        }
+      ],
+      "FirstName": "Will",
+      "LastName": "James"
+    },
+    {
+      "Id": 3,
+      "JobType": [
+        {
+          "Id": 2,
+          "JobTypeName": "Backend developer"
+        }
+      ],
+      "FirstName": "Karon",
+      "LastName": "Williamson"
+    },
+    {
+      "Id": 4,
+      "JobType": [
+        {
+          "Id": 2,
+          "JobTypeName": "Backend developer"
+        }
+      ],
+      "FirstName": "Aaron",
+      "LastName": "Johnson"
+    },
+    {
+      "Id": 5,
+      "JobType": [
+        {
+          "Id": 3,
+          "JobTypeName": "Devops engineer"
+        }
+      ],
+      "FirstName": "Mike",
+      "LastName": "Grant"
+    }
+  ],
+  "ScheduleJobs": [
+    {
+      "Id": 1,
+      "JobStartDateTime": "2024-04-19T09:00:00",
+      "JobEndDateTime": "2024-04-19T16:00:00",
+      "NoOfEmployeesRequired": 2,
+      "JobType": [
+        {
+          "Id": 1,
+          "JobTypeName": "Front end developer"
+        }
+      ]
+    },
+    {
+      "Id": 2,
+      "JobStartDateTime": "2024-04-20T09:00:00",
+      "JobEndDateTime": "2024-04-20T16:00:00",
+      "NoOfEmployeesRequired": 1,
+      "JobType": [
+        {
+          "Id": 2,
+          "JobTypeName": "Backend developer"
+        }
+      ]
+    },
+    {
+      "Id": 3,
+      "JobStartDateTime": "2024-04-22T09:00:00",
+      "JobEndDateTime": "2024-04-22T16:00:00",
+      "NoOfEmployeesRequired": 1,
+      "JobType": [
+        {
+          "Id": 3,
+          "JobTypeName": "Devops engineer"
+        }
+      ]
+    },
+    {
+      "Id": 4,
+      "JobStartDateTime": "2024-04-23T09:00:00",
+      "JobEndDateTime": "2024-04-23T16:00:00",
+      "NoOfEmployeesRequired": 2,
+      "JobType": [
+        {
+          "Id": 2,
+          "JobTypeName": "Backend developer"
+        }
+      ]
+    }
+  ]
+}
