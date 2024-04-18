@@ -1,21 +1,48 @@
 <div class="container">
+    <div class="row schedule-builder-row">
+        <div class="card">
+            <div class="row d-flex card-body justify-content-between schedule-card">
+                <div class="col">
+                    <h3 class="card-title">Schedule Builder</h3>
+                </div>
+                <div class="col">
+                    
+                    <button type="button" style="width: 300px; height: 50px; font-size: 23px;" class="btn btn-primary float-end">
+                        <i class="fa fa-magic" aria-hidden="true"></i>
+                        Generate Schedule
+                    </button>
+                    <button type="button" style="width: 60px; height: 50px; font-size: 23px; margin-right: 10px;" class="btn btn-secondary float-end">
+                        <i class="fa fa-sliders" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="row">
         <div class="col-8 calender-col">
-            <div>
-                <h3>Calender</h3>
-            </div>
-            <full-calendar #calendar id="calendar"
-                [options]="calendarOptions"
-                [events]="eventsPromise | async"
-                ></full-calendar>
+            <div class="card">
+                <div class="card-body">
+                  <h3 class="card-title">Calender</h3>
+                  <div class="h-100">
+                    <full-calendar #calendar id="calendar"
+                        [options]="calendarOptions"
+                        [events]="eventsPromise | async"
+                        ></full-calendar> 
+                    </div>
+                </div>
+              </div>
         </div>
         <div class="col-4 people-col">
-            <div>
-                <h3>People</h3>
-            </div>
-            <div>
-                
-            </div>
+            <div class="card">
+                <div class="card-body">
+                  <h3 class="card-title">People</h3>
+                  <div class="h-100">
+                    <ng-select [(ngModel)]="selectedCar">
+                        <ng-option *ngFor="let car of cars" [value]="car.id">{{car.name}}</ng-option>
+                     </ng-select>
+                    </div>
+                </div>
+              </div>
         </div>
     </div>
 </div>

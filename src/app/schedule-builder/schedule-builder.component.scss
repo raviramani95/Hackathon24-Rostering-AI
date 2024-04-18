@@ -14,18 +14,36 @@ html, body {
     margin-left: 48px;
   }
 
+  .schedule-builder-row{
+    border: 15px solid #E0E0E7 !important;
+  }
+
+  .schedule-card{
+    margin-left: -8px !important;
+  }
+  .label-1{
+    font-size: 25px;
+  }
   body {
     background-color: #eff3f7;
   }
 
+  .card {
+    border: hidden;
+  }
+
+.label {
+  padding: 10px 0px;
+}
+
   .calender-col{
-    border: 20px solid #E0E0E7 !important;
-    border-radius: 5px;
+    border: 15px solid #E0E0E7 !important;
+    //border-radius: 15px;
   }
 
   .people-col{
-    border: 20px solid #E0E0E7 !important;
-    border-radius: 5px;
+    border: 15px solid #E0E0E7 !important;
+    //border-radius: 5px;
   }
 
   .container {
