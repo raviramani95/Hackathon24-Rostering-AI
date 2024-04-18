@@ -7,7 +7,7 @@
                 </div>
                 <div class="col-3">
                     
-                    <button type="button" style="width: 300px; height: 50px; font-size: 23px;" class="btn btn-primary float-end">
+                    <button type="button" style="width: 300px; height: 50px; font-size: 23px;" class="btn btn-primary float-end" (click)="autoSolve()">
                         <i class="fa fa-magic" aria-hidden="true"></i>
                         Generate Schedule
                     </button>
@@ -43,9 +43,7 @@
                     </div>
                     <div class="h-100">
                         <div *ngFor="let employee of employees" 
-                            class="employee-card" 
-                            [class.selected]="isSelected(employee)"
-                            (click)="toggleSelection(employee)">
+                            class="employee-card">
                             <!-- User image -->
                             <div class="user-image">
                                 <!-- Placeholder image or real user image source -->

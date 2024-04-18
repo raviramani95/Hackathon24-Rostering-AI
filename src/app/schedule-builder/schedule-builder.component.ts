@@ -17,7 +17,7 @@ export class ScheduleBuilderComponent implements OnInit, AfterViewInit {
   title = 'Rostering-AI';
   events: any[] = [];
   @ViewChild("calendar", { static: false })
-  fullCalendar: FullCalendarComponent | undefined;
+  fullCalendar!: FullCalendarComponent;
 
   eventsPromise: Promise<EventInput[]> | undefined;
 
@@ -155,25 +155,10 @@ export class ScheduleBuilderComponent implements OnInit, AfterViewInit {
   // ]
 
   //employees: any[] = [ /* Your employee data */ ];
-    selectedEmployees: any[] = [];
-
-    toggleSelection(employee: any) {
-        const index = this.selectedEmployees.indexOf(employee);
-        if (index > -1) {
-            this.selectedEmployees.splice(index, 1);
-        } else {
-            this.selectedEmployees.push(employee);
-        }
-        console.log(this.selectedEmployees);
-    }
-
-    isSelected(employee: any): boolean {
-      //console.log(employee);
-        return this.selectedEmployees.indexOf(employee) > -1;
-    }
+    selectedGroups: any;
 
     postData(){
-      this.autosolveService.postAutoSolve().subscribe((data: any) => {
+      this.autosolveService.postAutoSolve(1).subscribe((data: any) => {
        console.log(data);
 
     },
@@ -182,25 +167,34 @@ export class ScheduleBuilderComponent implements OnInit, AfterViewInit {
     });
     }
 
-    onCustomerSelected(event: any){
+
+  onCustomerSelected(event: any) {
+    this.startSpinner();
+    setTimeout(() => {
       console.log(event);
-      this.employees = this.autosolveService.customerData1.Employees;
-      this.scheduleJobs =this.autosolveService.customerData1.ScheduleJobs;
+      this.selectedGroups = event.id;
+      this.autosolveService.getEmployees(event.id).subscribe((data: any) => {
+        debugger
+        this.employees = data.Employees;
+        this.scheduleJobs = data.ScheduleJobs;
+        this.events = [];
+        this.calendarOptions.events = this.events;
+        this.fullCalendar.getApi().render();
 
-      this.events = [];
-      this.scheduleJobs.forEach(job => {
-        let temp = {
-          id: job.id,
-          title: job.JobType[0].JobTypeName,
-          date: job.JobStartDateTime,
-          color: 'green',
-          employees: ['Employee 1', 'Employee 2']
-        }
-        this.events.push(temp);
+        this.scheduleJobs.forEach(job => {
+          let temp = {
+            id: job.Id,
+            title: job.JobType[0].JobTypeName + ' ' + job.JobEndDateTime,
+            date: job.JobStartDateTime
+          }
+          this.events.push(temp);
+        });
+        this.calendarOptions.events = this.events;
+        this.fullCalendar.getApi().render();
+        this.spinner.hide();
       });
-
-      this.calendarOptions.events = this.events;
-    }
+    }, 800);
+  }
 
     showSpinner() {
       this.spinner.show();
@@ -213,36 +207,6 @@ export class ScheduleBuilderComponent implements OnInit, AfterViewInit {
       this.spinner.show();
     }
 
-    // customEventContent(eventInfo: any, createElement: any) {
-    //   debugger
-    //   const titleHtml = createElement('div', {}, eventInfo.event.title); // Create title element
-    //   const employeesHtml = createElement('div', {}, eventInfo.event.extendedProps.employees.join(', ')); // Create employees element
-  
-    //   const contentHtml = createElement('div', {}, [titleHtml, employeesHtml]); // Combine title and employees
-  
-    //   return { domNodes: [contentHtml] };
-    // }
-
-    // customEventContent(eventInfo: any) {
-    //   const container = this.renderer.createElement('div'); // Create a container div
-    //   debugger
-    //   const titleElement = this.renderer.createElement('div'); // Create a div for the title
-    //   const titleText = this.renderer.createText(eventInfo.event.title); // Create text node for the title
-    //   this.renderer.appendChild(titleElement, titleText); // Append text to the title div
-    //   this.renderer.appendChild(container, titleElement); // Append title div to the container
-  
-    //   if (eventInfo.event.extendedProps.employees && eventInfo.event.extendedProps.employees.length > 0) {
-    //     for(let i=0;i < eventInfo.event.extendedProps.employees.length; i++){
-    //       const employeesElement = this.renderer.createElement('div'); // Create a div for the employees
-    //       const employeesText = this.renderer.createText(eventInfo.event.extendedProps.employees[i]); // Create text node for employees
-    //       this.renderer.appendChild(employeesElement, employeesText); // Append text to the employees div
-    //       this.renderer.appendChild(container, employeesElement); // Append employees div to the container
-    //     }
-        
-    //   }
-  
-    //   return { domNodes: [container] }; // Return container div as the event content
-    // }
     customEventContent(eventInfo: any) {
       const container = this.renderer.createElement('div'); // Create a container div
       this.renderer.addClass(container, 'event-container'); // Add a class to the container for styling
@@ -267,5 +231,34 @@ export class ScheduleBuilderComponent implements OnInit, AfterViewInit {
       }
   
       return { domNodes: [container] }; // Return container div as the event content
+    }
+
+    autoSolve(){
+      this.startSpinner();
+      setTimeout(() => {
+        this.autosolveService.postAutoSolve(this.selectedGroups).subscribe((data: any) => {
+          // this.employees = data.Employees;
+          this.scheduleJobs = data.filledJob;
+          debugger
+          console.log(data);
+          this.events = [];
+          this.calendarOptions.events = this.events;
+          this.fullCalendar.getApi().render();
+          this.scheduleJobs.forEach(job => {
+            let temp = {
+              id: job.jobID,
+              title: job.jobTypeName + ' ' + job.jobEndDateTime,
+              date: job.jobStartDateTime,
+              color: 'green',
+              employees: job.assignedEmployees
+            }
+            this.events.push(temp);
+          });
+          this.calendarOptions.events = this.events;
+          this.fullCalendar.getApi().render();
+
+          this.spinner.hide();
+        })
+      }, 2000);
     }
 }
